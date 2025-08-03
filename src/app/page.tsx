@@ -133,9 +133,6 @@ const InterviewGuruLanding = () => {
 	];
 
 	const HeaderSection = () => {
-		const [loginButtonClicked, setLoginButtonClicked] = useState(false);
-		const [signupButtonClicked, setSignupButtonClicked] = useState(false);
-
 		return (
 			<header className="sticky top-0 w-full pt-2 max-w-[1314px] m-auto">
 				<div className="mx-2 flex justify-between bg-background p-2 items-center rounded-lg border">
@@ -165,29 +162,17 @@ const InterviewGuruLanding = () => {
 					<div className="flex gap-3">
 						<Button
 							onClick={() => {
-								setLoginButtonClicked(true);
-								setTimeout(() => {
-									setLoginButtonClicked(false);
-								}, 3500);
 								window.location.href = "https://app.interviewguru.io/sign-in";
 							}}
 							size="sm"
-							loading={loginButtonClicked}
-							disabled={signupButtonClicked || loginButtonClicked}
 							variant="ghost"
 						>
 							Login
-						</Button> 
+						</Button>
 						<Button
 							onClick={() => {
-								setSignupButtonClicked(true);
-								setTimeout(() => {
-									setSignupButtonClicked(false);
-								}, 3500);
 								window.location.href = "https://app.interviewguru.io/sign-up";
 							}}
-							loading={signupButtonClicked}
-							disabled={signupButtonClicked || loginButtonClicked}
 							variant="default"
 							size="sm"
 						>
