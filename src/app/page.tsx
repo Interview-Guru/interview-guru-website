@@ -210,8 +210,8 @@ const InterviewGuruLanding = () => {
 							AI Powered Interview Prep That Actually Works
 						</h1>
 						<p className="text-muted-foreground font-light cursor-default text-center max-w-lg m-auto">
-							Get a personalized learning path with an AI mentor that knows you - skip generic practice and get
-							questions tailored to your exact target role.
+							Get a personalized learning path with an AI mentor that knows you—skip generic practice and get content
+							tailored to your exact target role.
 						</p>
 						<Button
 							onClick={() => {
