@@ -1,27 +1,12 @@
 "use client";
 
 import React, { useState } from "react";
-import {
-	Star,
-	Target,
-	Zap,
-	Brain,
-	Award,
-	Check,
-	ArrowRight,
-	Play,
-	Code,
-	Building,
-	Menu,
-	X,
-	StarIcon,
-} from "lucide-react";
+import { Star, Target, Zap, Brain, Award, Check, ArrowRight, Code, Building } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Avatar, AvatarFallback } from "@/components/ui/avatar";
 import { SmallLogo } from "@/components/SmallLogo";
-import { useRouter } from "next/router";
 import Aurora from "@/components/react-bits/Aurora";
 import { FaStar } from "react-icons/fa";
 
