@@ -173,7 +173,6 @@ const InterviewGuruLanding = () => {
 							onClick={() => {
 								window.location.href = "https://app.interviewguru.io/sign-up";
 							}}
-							variant="default"
 							size="sm"
 						>
 							Sign up
