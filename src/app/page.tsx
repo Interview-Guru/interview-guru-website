@@ -177,7 +177,7 @@ const InterviewGuruLanding = () => {
 							variant="ghost"
 						>
 							Login
-						</Button>
+						</Button> 
 						<Button
 							onClick={() => {
 								setSignupButtonClicked(true);
