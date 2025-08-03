@@ -135,8 +135,8 @@ const InterviewGuruLanding = () => {
 
 	const HeaderSection = () => {
 		return (
-			<header className="sticky top-0 w-full pt-2 max-w-[1314px] m-auto">
-				<div className="mx-2 flex justify-between bg-background p-2 items-center rounded-lg border">
+			<header className="sticky bg-background top-0 w-full border-b">
+				<div className="flex justify-between p-2 items-center max-w-[1314px] m-auto">
 					{" "}
 					<div className="md:hidden">
 						<SmallLogo showText={false} />
@@ -167,6 +167,7 @@ const InterviewGuruLanding = () => {
 							}}
 							size="sm"
 							variant="ghost"
+							className="font-light"
 						>
 							Login
 						</Button>
@@ -187,10 +188,10 @@ const InterviewGuruLanding = () => {
 	const HeroSection = () => {
 		return (
 			<div>
-				<div className="absolute w-full -z-10 -mt-[62px] h-[60%]">
+				<div className="absolute w-full -z-10 -mt-[52px] h-[60%]">
 					<Aurora />
 				</div>
-				<div className="h-[calc(100svh-62px)] flex flex-col justify-around">
+				<div className="h-[calc(100svh-52px)] flex flex-col justify-around">
 					<section className="px-6 flex flex-col gap-5">
 						<Badge
 							onClick={() => {
@@ -199,13 +200,13 @@ const InterviewGuruLanding = () => {
 							variant="outline"
 							className="flex items-center gap-2 font-light p-2 rounded-full py-1 m-auto"
 						>
-							Built by Amazon Engineers.
+							Built by FAANG Engineers.
 							<span className="flex items-centers gap-1 font-semibold">
 								Try it here
 								<ArrowRight className="w-3.5 h-4" />
 							</span>
 						</Badge>
-						<h1 className="text-2xl font-bold text-center">AI Powered Interview Prep That Actually Works</h1>
+						<h1 className="text-3xl font-bold text-center">AI Powered Interview Prep That Actually Works</h1>
 						<p className="text-muted-foreground font-light text-sm text-center">
 							Get a personalized learning path with an AI mentor that knows you—skip generic practice and get content
 							tailored to your exact target role.
