@@ -137,8 +137,8 @@ const InterviewGuruLanding = () => {
 		const [signupButtonClicked, setSignupButtonClicked] = useState(false);
 
 		return (
-			<header className="sticky top-0 w-full pt-2">
-				<div className="mx-2 flex justify-between bg-background p-3 items-center rounded-lg border">
+			<header className="sticky top-0 w-full pt-2 max-w-[1314px] m-auto">
+				<div className="mx-2 flex justify-between bg-background p-2 items-center rounded-lg border">
 					{" "}
 					<div className="md:hidden">
 						<SmallLogo showText={false} />
@@ -171,6 +171,7 @@ const InterviewGuruLanding = () => {
 								}, 3500);
 								window.location.href = "https://app.interviewguru.io/sign-in";
 							}}
+							size="sm"
 							loading={loginButtonClicked}
 							disabled={signupButtonClicked || loginButtonClicked}
 							variant="ghost"
@@ -188,6 +189,7 @@ const InterviewGuruLanding = () => {
 							loading={signupButtonClicked}
 							disabled={signupButtonClicked || loginButtonClicked}
 							variant="default"
+							size="sm"
 						>
 							Sign up
 						</Button>
@@ -197,79 +199,26 @@ const InterviewGuruLanding = () => {
 		);
 	};
 
+	const HeroSection = () => {
+		return (
+			<div>
+				<section className="pt-10 pb-20 px-6">
+					<Badge variant="outline" className="flex items-center gap-2 font-light p-2 rounded-full py-1 m-auto">
+						Built by Amazon Engineers.
+						<span className="flex items-centers gap-1 font-semibold">
+							Try it here
+							<ArrowRight className="w-3.5 h-4" />
+						</span>
+					</Badge>
+				</section>
+			</div>
+		);
+	};
+
 	return (
 		<div className="min-h-screen">
 			<HeaderSection />
-			{/* Header */}
-			{/* <header className="fixed top-0 w-full bg-white/95 backdrop-blur-md z-50 border-b">
-				<nav className="container mx-auto px-6 py-4 flex justify-between items-center">
-					<div className="text-2xl font-bold">InterviewGuru.io</div>
-
-					<div className="hidden md:flex space-x-8">
-						<Button variant="ghost" onClick={() => scrollToSection("features")}>
-							Features
-						</Button>
-						<Button variant="ghost" onClick={() => scrollToSection("how-it-works")}>
-							How It Works
-						</Button>
-						<Button variant="ghost" onClick={() => scrollToSection("testimonials")}>
-							Success Stories
-						</Button>
-						<Button variant="ghost" onClick={() => scrollToSection("pricing")}>
-							Pricing
-						</Button>
-					</div>
-
-					<div className="flex items-center space-x-4">
-						<Button>Start Now</Button>
-
-						<Button
-							variant="ghost"
-							size="icon"
-							className="md:hidden"
-							onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-						>
-							{mobileMenuOpen ? <X /> : <Menu />}
-						</Button>
-					</div>
-				</nav>
-
-				{mobileMenuOpen && (
-					<div className="md:hidden bg-white border-t">
-						<div className="container mx-auto px-6 py-4 space-y-4">
-							<Button
-								variant="ghost"
-								onClick={() => scrollToSection("features")}
-								className="w-full text-left justify-start"
-							>
-								Features
-							</Button>
-							<Button
-								variant="ghost"
-								onClick={() => scrollToSection("how-it-works")}
-								className="w-full text-left justify-start"
-							>
-								How It Works
-							</Button>
-							<Button
-								variant="ghost"
-								onClick={() => scrollToSection("testimonials")}
-								className="w-full text-left justify-start"
-							>
-								Success Stories
-							</Button>
-							<Button
-								variant="ghost"
-								onClick={() => scrollToSection("pricing")}
-								className="w-full text-left justify-start"
-							>
-								Pricing
-							</Button>
-						</div>
-					</div>
-				)}
-			</header> */}
-
+			<HeroSection />
 			{/* Hero Section */}
 			<section className="pt-32 pb-20 px-6">
 				<div className="container mx-auto text-center">
