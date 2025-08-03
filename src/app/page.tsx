@@ -1,23 +1,7 @@
 "use client";
 
 import React, { useState } from "react";
-import {
-	ChevronDown,
-	Star,
-	Users,
-	Target,
-	Zap,
-	Brain,
-	Award,
-	Check,
-	ArrowRight,
-	Play,
-	Code,
-	Building,
-	Clock,
-	Menu,
-	X,
-} from "lucide-react";
+import { Star, Target, Zap, Brain, Award, Check, ArrowRight, Play, Code, Building, Menu, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
@@ -36,7 +20,7 @@ const InterviewGuruLanding = () => {
 			name: "Sarah Chen",
 			role: "Software Engineer at Google",
 			content:
-				"InterviewGuru's AI mentor helped me understand patterns I was struggling with. Got my dream job in 8 weeks!",
+				"InterviewGuru&apos;s AI mentor helped me understand patterns I was struggling with. Got my dream job in 8 weeks!",
 			avatar: "SC",
 			rating: 5,
 		},
@@ -141,7 +125,7 @@ const InterviewGuruLanding = () => {
 		{
 			number: "04",
 			title: "Land Your Dream Job",
-			description: "Apply with confidence knowing you've mastered the patterns that matter.",
+			description: "Apply with confidence knowing you&apos;ve mastered the patterns that matter.",
 			icon: <Award className="w-6 h-6" />,
 		},
 	];
@@ -366,7 +350,7 @@ const InterviewGuruLanding = () => {
 									</div>
 								</CardHeader>
 								<CardContent>
-									<p>"{testimonial.content}"</p>
+									<p>&quot;{testimonial.content}&quot;</p>
 								</CardContent>
 							</Card>
 						))}
@@ -394,7 +378,7 @@ const InterviewGuruLanding = () => {
 									</div>
 								</CardHeader>
 								<CardContent>
-									<p>"{testimonial.content}"</p>
+									<p>&quot;{testimonial.content}&quot;</p>
 								</CardContent>
 							</Card>
 						))}
@@ -499,8 +483,8 @@ const InterviewGuruLanding = () => {
 				<div className="container mx-auto text-center">
 					<h2 className="text-4xl md:text-5xl font-bold mb-6">Ready to Land Your Dream Job?</h2>
 					<p className="text-xl text-gray-600 mb-8 max-w-2xl mx-auto">
-						Join thousands of engineers who've used InterviewGuru to level up their careers and land high-paying jobs at
-						top companies.
+						Join thousands of engineers who&apos;ve used InterviewGuru to level up their careers and land high-paying
+						jobs at top companies.
 					</p>
 					<Button size="lg">
 						Start Now <ArrowRight className="ml-2 w-5 h-5" />
