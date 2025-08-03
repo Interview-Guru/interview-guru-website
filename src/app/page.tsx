@@ -1,7 +1,21 @@
 "use client";
 
 import React, { useState } from "react";
-import { Star, Target, Zap, Brain, Award, Check, ArrowRight, Play, Code, Building, Menu, X } from "lucide-react";
+import {
+	Star,
+	Target,
+	Zap,
+	Brain,
+	Award,
+	Check,
+	ArrowRight,
+	Play,
+	Code,
+	Building,
+	Menu,
+	X,
+	StarIcon,
+} from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
@@ -9,6 +23,7 @@ import { Avatar, AvatarFallback } from "@/components/ui/avatar";
 import { SmallLogo } from "@/components/SmallLogo";
 import { useRouter } from "next/router";
 import Aurora from "@/components/react-bits/Aurora";
+import { FaStar } from "react-icons/fa";
 
 const InterviewGuruLanding = () => {
 	const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -219,6 +234,19 @@ const InterviewGuruLanding = () => {
 						>
 							Start Now
 						</Button>
+						<Badge
+							variant="outline"
+							className="m-auto flex flex-col items-center gap-2 rounded-2xl border-0.5 border p-3"
+						>
+							<p className="text-xs m-auto font-light">Trusted by 1000+ Developers</p>
+							<div className="flex gap-0.75">
+								<FaStar className="w-3 h-3 text-yellow-400" />
+								<FaStar className="w-3 h-3 text-yellow-400" />
+								<FaStar className="w-3 h-3 text-yellow-400" />
+								<FaStar className="w-3 h-3 text-yellow-400" />
+								<FaStar className="w-3 h-3 text-yellow-400" />
+							</div>
+						</Badge>
 					</section>
 				</div>
 			</div>
@@ -230,43 +258,22 @@ const InterviewGuruLanding = () => {
 			<HeroSection />
 			{/* Hero Section */}
 			<section className="pt-32 pb-20 px-6 bg-white">
-				<div className="container mx-auto text-center">
-					<Badge className="mb-6">Built by Amazon Engineers</Badge>
-
-					<h1 className="text-5xl md:text-7xl font-bold mb-6">AI-Powered Interview Prep That Actually Works</h1>
-
-					<p className="text-xl md:text-2xl text-gray-600 mb-8 max-w-3xl mx-auto">
-						Skip the generic practice. Get a personalized learning path with an AI mentor that knows you, tailored for
-						your target company. Land your dream job faster.
-					</p>
-
-					<div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-12">
-						<Button size="lg">
-							Start Now <ArrowRight className="ml-2 w-5 h-5" />
-						</Button>
-						<Button variant="outline" size="lg">
-							<Play className="mr-2 w-5 h-5" /> Watch Demo
-						</Button>
+				<div className="grid grid-cols-2 md:grid-cols-4 gap-8 max-w-2xl mx-auto">
+					<div>
+						<div className="text-3xl font-bold">400+</div>
+						<div className="text-gray-600">Companies</div>
 					</div>
-
-					{/* Stats */}
-					<div className="grid grid-cols-2 md:grid-cols-4 gap-8 max-w-2xl mx-auto">
-						<div>
-							<div className="text-3xl font-bold">400+</div>
-							<div className="text-gray-600">Companies</div>
-						</div>
-						<div>
-							<div className="text-3xl font-bold">95%</div>
-							<div className="text-gray-600">Success Rate</div>
-						</div>
-						<div>
-							<div className="text-3xl font-bold">8 weeks</div>
-							<div className="text-gray-600">Avg. Prep Time</div>
-						</div>
-						<div>
-							<div className="text-3xl font-bold">$250k+</div>
-							<div className="text-gray-600">Avg. Salary</div>
-						</div>
+					<div>
+						<div className="text-3xl font-bold">95%</div>
+						<div className="text-gray-600">Success Rate</div>
+					</div>
+					<div>
+						<div className="text-3xl font-bold">8 weeks</div>
+						<div className="text-gray-600">Avg. Prep Time</div>
+					</div>
+					<div>
+						<div className="text-3xl font-bold">$250k+</div>
+						<div className="text-gray-600">Avg. Salary</div>
 					</div>
 				</div>
 			</section>
