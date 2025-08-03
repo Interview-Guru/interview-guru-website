@@ -8,6 +8,7 @@ import { Badge } from "@/components/ui/badge";
 import { Avatar, AvatarFallback } from "@/components/ui/avatar";
 import { SmallLogo } from "@/components/SmallLogo";
 import { useRouter } from "next/router";
+import Aurora from "@/components/react-bits/Aurora";
 
 const InterviewGuruLanding = () => {
 	const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -186,25 +187,48 @@ const InterviewGuruLanding = () => {
 	const HeroSection = () => {
 		return (
 			<div>
-				<section className="pt-10 pb-20 px-6">
-					<Badge variant="outline" className="flex items-center gap-2 font-light p-2 rounded-full py-1 m-auto">
-						Built by Amazon Engineers.
-						<span className="flex items-centers gap-1 font-semibold">
-							Try it here
-							<ArrowRight className="w-3.5 h-4" />
-						</span>
-					</Badge>
-				</section>
+				<div className="absolute w-full -z-10 -mt-[62px] h-[60%]">
+					<Aurora />
+				</div>
+				<div className="h-[calc(100svh-62px)] flex flex-col justify-around">
+					<section className="px-6 flex flex-col gap-5">
+						<Badge
+							onClick={() => {
+								window.location.href = "https://app.interviewguru.io/sign-up";
+							}}
+							variant="outline"
+							className="flex items-center gap-2 font-light p-2 rounded-full py-1 m-auto"
+						>
+							Built by Amazon Engineers.
+							<span className="flex items-centers gap-1 font-semibold">
+								Try it here
+								<ArrowRight className="w-3.5 h-4" />
+							</span>
+						</Badge>
+						<h1 className="text-2xl font-bold text-center">AI Powered Interview Prep That Actually Works</h1>
+						<p className="text-muted-foreground font-light text-sm text-center">
+							Get a personalized learning path with an AI mentor that knows you—skip generic practice and get content
+							tailored to your exact target role.
+						</p>
+						<Button
+							onClick={() => {
+								window.location.href = "https://app.interviewguru.io/sign-up";
+							}}
+							className="w-full md:w-[120px] m-auto"
+						>
+							Start Now
+						</Button>
+					</section>
+				</div>
 			</div>
 		);
 	};
-
 	return (
 		<div className="min-h-screen">
 			<HeaderSection />
 			<HeroSection />
 			{/* Hero Section */}
-			<section className="pt-32 pb-20 px-6">
+			<section className="pt-32 pb-20 px-6 bg-white">
 				<div className="container mx-auto text-center">
 					<Badge className="mb-6">Built by Amazon Engineers</Badge>
 
