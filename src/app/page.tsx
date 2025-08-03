@@ -6,6 +6,8 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Avatar, AvatarFallback } from "@/components/ui/avatar";
+import { SmallLogo } from "@/components/SmallLogo";
+import { useRouter } from "next/router";
 
 const InterviewGuruLanding = () => {
 	const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -130,14 +132,79 @@ const InterviewGuruLanding = () => {
 		},
 	];
 
+	const HeaderSection = () => {
+		const [loginButtonClicked, setLoginButtonClicked] = useState(false);
+		const [signupButtonClicked, setSignupButtonClicked] = useState(false);
+
+		return (
+			<header className="sticky top-0 w-full pt-2">
+				<div className="mx-2 flex justify-between bg-background p-3 items-center rounded-lg border">
+					{" "}
+					<div className="md:hidden">
+						<SmallLogo showText={false} />
+					</div>
+					<div className="hidden md:flex">
+						<SmallLogo />
+					</div>
+					<div className="hidden">
+						<div className="hidden md:flex space-x-8">
+							<Button variant="ghost" onClick={() => scrollToSection("features")}>
+								Features
+							</Button>
+							<Button variant="ghost" onClick={() => scrollToSection("how-it-works")}>
+								How It Works
+							</Button>
+							<Button variant="ghost" onClick={() => scrollToSection("testimonials")}>
+								Success Stories
+							</Button>
+							<Button variant="ghost" onClick={() => scrollToSection("pricing")}>
+								Pricing
+							</Button>
+						</div>
+					</div>
+					<div className="flex gap-3">
+						<Button
+							onClick={() => {
+								setLoginButtonClicked(true);
+								setTimeout(() => {
+									setLoginButtonClicked(false);
+								}, 3500);
+								window.location.href = "https://app.interviewguru.io/sign-in";
+							}}
+							loading={loginButtonClicked}
+							disabled={signupButtonClicked || loginButtonClicked}
+							variant="ghost"
+						>
+							Login
+						</Button>
+						<Button
+							onClick={() => {
+								setSignupButtonClicked(true);
+								setTimeout(() => {
+									setSignupButtonClicked(false);
+								}, 3500);
+								window.location.href = "https://app.interviewguru.io/sign-up";
+							}}
+							loading={signupButtonClicked}
+							disabled={signupButtonClicked || loginButtonClicked}
+							variant="default"
+						>
+							Sign up
+						</Button>
+					</div>
+				</div>
+			</header>
+		);
+	};
+
 	return (
 		<div className="min-h-screen">
+			<HeaderSection />
 			{/* Header */}
-			<header className="fixed top-0 w-full bg-white/95 backdrop-blur-md z-50 border-b">
+			{/* <header className="fixed top-0 w-full bg-white/95 backdrop-blur-md z-50 border-b">
 				<nav className="container mx-auto px-6 py-4 flex justify-between items-center">
 					<div className="text-2xl font-bold">InterviewGuru.io</div>
 
-					{/* Desktop Navigation */}
 					<div className="hidden md:flex space-x-8">
 						<Button variant="ghost" onClick={() => scrollToSection("features")}>
 							Features
@@ -156,7 +223,6 @@ const InterviewGuruLanding = () => {
 					<div className="flex items-center space-x-4">
 						<Button>Start Now</Button>
 
-						{/* Mobile Menu Button */}
 						<Button
 							variant="ghost"
 							size="icon"
@@ -168,7 +234,6 @@ const InterviewGuruLanding = () => {
 					</div>
 				</nav>
 
-				{/* Mobile Menu */}
 				{mobileMenuOpen && (
 					<div className="md:hidden bg-white border-t">
 						<div className="container mx-auto px-6 py-4 space-y-4">
@@ -203,7 +268,7 @@ const InterviewGuruLanding = () => {
 						</div>
 					</div>
 				)}
-			</header>
+			</header> */}
 
 			{/* Hero Section */}
 			<section className="pt-32 pb-20 px-6">
@@ -291,6 +356,7 @@ const InterviewGuruLanding = () => {
 				</div>
 			</section>
 
+			<div>US VS THEM</div>
 			{/* How It Works */}
 			<section id="how-it-works" className="py-20 px-6 bg-gray-50">
 				<div className="container mx-auto">
@@ -478,6 +544,7 @@ const InterviewGuruLanding = () => {
 				</div>
 			</section>
 
+			<div>COMMON QUESTIONS</div>
 			{/* CTA Section */}
 			<section className="py-20 px-6">
 				<div className="container mx-auto text-center">
