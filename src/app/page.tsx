@@ -198,7 +198,7 @@ const InterviewGuruLanding = () => {
 								window.location.href = "https://app.interviewguru.io/sign-up";
 							}}
 							variant="outline"
-							className="flex items-center gap-2 font-light p-2 rounded-full py-1 m-auto"
+							className="flex items-center gap-2 font-light p-2 rounded-full py-1 m-auto cursor-pointer"
 						>
 							Built by FAANG Engineers.
 							<span className="flex items-centers gap-1 font-semibold">
@@ -206,8 +206,10 @@ const InterviewGuruLanding = () => {
 								<ArrowRight className="w-3.5 h-4" />
 							</span>
 						</Badge>
-						<h1 className="text-3xl font-bold text-center">AI Powered Interview Prep That Actually Works</h1>
-						<p className="text-muted-foreground font-light text-sm text-center">
+						<h1 className="text-4xl font-bold text-center cursor-default">
+							AI Powered Interview Prep That Actually Works
+						</h1>
+						<p className="text-muted-foreground font-light cursor-default text-center max-w-lg m-auto">
 							Get a personalized learning path with an AI mentor that knows you—skip generic practice and get content
 							tailored to your exact target role.
 						</p>
@@ -215,7 +217,7 @@ const InterviewGuruLanding = () => {
 							onClick={() => {
 								window.location.href = "https://app.interviewguru.io/sign-up";
 							}}
-							className="w-full md:w-[120px] m-auto"
+							className="w-full md:w-[220px] m-auto"
 						>
 							Start Now
 						</Button>
@@ -223,7 +225,7 @@ const InterviewGuruLanding = () => {
 							variant="outline"
 							className="m-auto flex flex-col items-center gap-2 rounded-2xl border-0.5 border p-3"
 						>
-							<p className="text-xs m-auto font-light">Trusted by 1000+ Developers</p>
+							<p className="text-xs m-auto font-light cursor-default">Trusted by 1000+ Developers</p>
 							<div className="flex gap-0.75">
 								<FaStar className="w-3 h-3 text-yellow-400" />
 								<FaStar className="w-3 h-3 text-yellow-400" />
