@@ -272,8 +272,8 @@ const InterviewGuruLanding = () => {
 
 		return (
 			<footer className="flex px-4 py-20 bg-gradient-to-t from-foreground/5 to-transparent">
-				<div className="flex max-w-5xl m-auto justify-between w-full">
-					<div className="flex flex-col gap-2">
+				<div className="flex max-w-5xl m-auto justify-between w-full flex-wrap gap-10">
+					<div className="flex flex-col gap-2 mb-5">
 						<div className="flex items-left">
 							<SmallLogo showText={true} outline={true} />
 						</div>
@@ -294,7 +294,7 @@ const InterviewGuruLanding = () => {
 						{/* This will be tooltip that says "This actually updates it's not just static to make it looks good" */}
 						<p className="text-xs text-muted-foreground">© 2025 InterviewGuru.io. All rights reserved.</p>
 					</div>
-					<div className="flex items-left gap-20">
+					<div className="flex items-left flex-wrap gap-10">
 						<div className="flex flex-col">
 							<p className="font-bold pb-3 cursor-default">Legal</p>
 							<div className="flex flex-col gap-2 text-muted-foreground font-light text-sm">
