@@ -1,17 +1,16 @@
 "use client";
 
 import React, { ReactNode, useState } from "react";
-import { Star, Target, Zap, Brain, Award, Check, ArrowRight, Code, Building, DiscIcon } from "lucide-react";
+import { Star, Target, Zap, Brain, Award, Check, ArrowRight, Code, Building } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Avatar, AvatarFallback } from "@/components/ui/avatar";
 import { SmallLogo } from "@/components/SmallLogo";
 import Aurora from "@/components/react-bits/Aurora";
-import { FaDiscord, FaInstagram, FaLinkedin, FaStar, FaTwitter } from "react-icons/fa";
+import { FaInstagram, FaLinkedin, FaStar } from "react-icons/fa";
 import Link from "next/link";
-import { FaX, FaXTwitter } from "react-icons/fa6";
-import { IconType } from "react-icons";
+import { FaXTwitter } from "react-icons/fa6";
 import { IconBrandDiscord } from "@tabler/icons-react";
 
 const InterviewGuruLanding = () => {
@@ -254,16 +253,18 @@ const InterviewGuruLanding = () => {
 		};
 
 		const socialMediaIconsData = [
-			{ icon: <FaXTwitter className="w-5 h-5" />, link: "#" },
-			{ icon: <FaInstagram className="w-5 h-5" />, link: "#" },
-			{ icon: <FaLinkedin className="w-5 h-5" />, link: "#" },
+			{ icon: <FaXTwitter className="w-5 h-5" />, link: "#1" },
+			{ icon: <FaInstagram className="w-5 h-5" />, link: "#2" },
+			{ icon: <FaLinkedin className="w-5 h-5" />, link: "#3" },
 		];
 
 		const SocialMediaLinks = () => {
 			return (
 				<div className="flex gap-2 text-muted-foreground pt-2">
 					{socialMediaIconsData.map((socialMediaIcon) => {
-						return <SocialMediaIcon icon={socialMediaIcon.icon} link={socialMediaIcon.link} />;
+						return (
+							<SocialMediaIcon key={socialMediaIcon.link} icon={socialMediaIcon.icon} link={socialMediaIcon.link} />
+						);
 					})}
 				</div>
 			);
@@ -588,7 +589,7 @@ const InterviewGuruLanding = () => {
 			{/* CTA Section */}
 			<section className="py-20 px-6">
 				<div className="container mx-auto text-center">
-					<h2 className="text-4xl md:text-5xl font-bold mb-6">You Don't Have To Risk Getting Caugh Cheating.?</h2>
+					<h2 className="text-4xl md:text-5xl font-bold mb-6">You Don&apos;t Have To Risk Getting Caugh Cheating.?</h2>
 					<p className="text-xl text-gray-600 mb-8 max-w-2xl mx-auto">
 						Just learn what you need to, understand it and apply. Join IG today.
 					</p>
