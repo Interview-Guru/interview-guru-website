@@ -310,7 +310,7 @@ const InterviewGuruLanding = () => {
 							</div>
 						</div>
 						<div className="flex flex-col">
-							<p className="font-bold pb-3 cursor-default">Pages</p>
+							<p className="font-bold pb-3 cursor-default">Links</p>
 							<div className="flex flex-col gap-2 text-muted-foreground font-light text-sm">
 								<Link
 									href={"https://discord.com/invite/XwUJu7tBHW"}
