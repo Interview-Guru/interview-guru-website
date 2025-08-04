@@ -20,13 +20,15 @@ export const HeaderSection = () => {
 	return (
 		<header className="sticky bg-background top-0 w-full border-b">
 			<div className="flex justify-between p-2 items-center max-w-5xl m-auto">
-				{" "}
-				<Link href={"/"} className="md:hidden">
-					<SmallLogo showText={false} />
+				<Link href={"/"}>
+					<div className="md:hidden">
+						<SmallLogo showText={false} />
+					</div>
+					<div className="hidden md:flex">
+						<SmallLogo />
+					</div>
 				</Link>
-				<div className="hidden md:flex">
-					<SmallLogo />
-				</div>
+
 				<div className="hidden">
 					<div className="hidden md:flex space-x-8">
 						<Button variant="ghost" onClick={() => scrollToSection("features")}>
