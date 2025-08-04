@@ -271,7 +271,7 @@ const InterviewGuruLanding = () => {
 		};
 
 		return (
-			<footer className="flex px-4 py-20 bg-gradient-to-b from-foreground/5 to-transparent">
+			<footer className="flex px-4 py-20 bg-gradient-to-t from-foreground/5 to-transparent">
 				<div className="flex max-w-5xl m-auto justify-between w-full">
 					<div className="flex flex-col gap-2">
 						<div className="flex items-left">
@@ -330,8 +330,9 @@ const InterviewGuruLanding = () => {
 		<div className="min-h-screen">
 			<HeaderSection />
 			<HeroSection />
-			<div className="w-full h-[200px] bg-white"></div>
 			<FooterSection />
+
+			<div className="w-full h-[200px] bg-white"></div>
 			{/* Hero Section */}
 			<section className="pt-32 pb-20 px-6 bg-white">
 				<div className="grid grid-cols-2 md:grid-cols-4 gap-8 max-w-2xl mx-auto">
@@ -598,55 +599,6 @@ const InterviewGuruLanding = () => {
 					</Button>
 				</div>
 			</section>
-
-			{/* Footer */}
-			<footer className="py-12 px-6 bg-gray-100 border-t">
-				<div className="container mx-auto">
-					<div className="grid md:grid-cols-4 gap-8">
-						<div>
-							<div className="text-2xl font-bold mb-4">InterviewGuru.io</div>
-							<p className="text-gray-600">
-								AI-powered interview preparation built by Amazon engineers for engineers who want to land their dream
-								jobs.
-							</p>
-						</div>
-
-						<div>
-							<h3 className="font-semibold mb-4">Product</h3>
-							<div className="space-y-2 text-gray-600">
-								<div>Features</div>
-								<div>How It Works</div>
-								<div>Pricing</div>
-								<div>Success Stories</div>
-							</div>
-						</div>
-
-						<div>
-							<h3 className="font-semibold mb-4">Company</h3>
-							<div className="space-y-2 text-gray-600">
-								<div>About</div>
-								<div>Blog</div>
-								<div>Careers</div>
-								<div>Contact</div>
-							</div>
-						</div>
-
-						<div>
-							<h3 className="font-semibold mb-4">Support</h3>
-							<div className="space-y-2 text-gray-600">
-								<div>Help Center</div>
-								<div>Documentation</div>
-								<div>Terms of Service</div>
-								<div>Privacy Policy</div>
-							</div>
-						</div>
-					</div>
-
-					<div className="border-t mt-8 pt-8 text-center text-gray-600">
-						<p>© 2025 InterviewGuru.io. All rights reserved.</p>
-					</div>
-				</div>
-			</footer>
 			<FooterSection />
 		</div>
 	);
