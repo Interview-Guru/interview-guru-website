@@ -127,8 +127,8 @@ export const FooterSection = () => {
 							<Link className="hover:text-primary" href={"/policy/refund"}>
 								Refund Policy
 							</Link>
-							<Link className="hover:text-primary" href={"/policy/cancellation-policy"}>
-								Cancellation Policy
+							<Link className="hover:text-primary" href={"/policy/privacy"}>
+								Privacy Policy
 							</Link>
 						</div>
 					</div>

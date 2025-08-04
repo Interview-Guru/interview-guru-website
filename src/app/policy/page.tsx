@@ -1,6 +1,5 @@
 "use client";
 
-import Aurora from "@/components/react-bits/Aurora";
 import { FooterSection, HeaderSection } from "../page";
 import { Card, CardDescription, CardHeader } from "@/components/ui/card";
 import Link from "next/link";
@@ -16,7 +15,7 @@ const PolicyPage = () => {
 		{
 			title: "Refund & Cancellation Policy",
 			description: "Information about our refund policy, cancellation process and subscription details.",
-			link: "refund-and-cancellation",
+			link: "refund",
 		},
 		{
 			title: "Privacy Policy",
