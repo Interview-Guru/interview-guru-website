@@ -312,12 +312,19 @@ const InterviewGuruLanding = () => {
 						<div className="flex flex-col">
 							<p className="font-bold pb-3 cursor-default">Pages</p>
 							<div className="flex flex-col gap-2 text-muted-foreground font-light text-sm">
-								<Link href={"https://discord.com/invite/XwUJu7tBHW"} className="flex gap-1 items-center">
+								<Link
+									href={"https://discord.com/invite/XwUJu7tBHW"}
+									className="flex gap-1 items-center hover:text-primary"
+								>
 									<IconBrandDiscord size={17} />
 									Join the community
 								</Link>
-								<Link href={"https://app.interviewguru.io/sign-in"}>Sign in to account</Link>
-								<Link href={"https://app.interviewguru.io/sign-up"}>Create account</Link>
+								<Link className="hover:text-primary" href={"https://app.interviewguru.io/sign-in"}>
+									Sign in to account
+								</Link>
+								<Link className="hover:text-primary" href={"https://app.interviewguru.io/sign-up"}>
+									Create account
+								</Link>
 							</div>
 						</div>
 					</div>
