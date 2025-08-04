@@ -1,7 +1,7 @@
 "use client";
 
 import React, { ReactNode, useState } from "react";
-import { Star, Target, Zap, Brain, Award, Check, ArrowRight, Code, Building } from "lucide-react";
+import { Star, Target, Zap, Brain, Award, Check, ArrowRight, Code, Building, DiscIcon } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
@@ -12,6 +12,7 @@ import { FaDiscord, FaInstagram, FaLinkedin, FaStar, FaTwitter } from "react-ico
 import Link from "next/link";
 import { FaX, FaXTwitter } from "react-icons/fa6";
 import { IconType } from "react-icons";
+import { IconBrandDiscord } from "@tabler/icons-react";
 
 const InterviewGuruLanding = () => {
 	const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -139,7 +140,7 @@ const InterviewGuruLanding = () => {
 	const HeaderSection = () => {
 		return (
 			<header className="sticky bg-background top-0 w-full border-b">
-				<div className="flex justify-between p-2 items-center max-w-7xl m-auto">
+				<div className="flex justify-between p-2 items-center max-w-5xl m-auto">
 					{" "}
 					<div className="md:hidden">
 						<SmallLogo showText={false} />
@@ -269,8 +270,8 @@ const InterviewGuruLanding = () => {
 		};
 
 		return (
-			<footer className="flex px-4 py-20">
-				<div className="flex max-w-7xl m-auto justify-between w-full">
+			<footer className="flex px-4 py-20 bg-gradient-to-b from-foreground/5 to-transparent">
+				<div className="flex max-w-5xl m-auto justify-between w-full">
 					<div className="flex flex-col gap-2">
 						<div className="flex items-left">
 							<SmallLogo showText={true} outline={true} />
@@ -292,22 +293,31 @@ const InterviewGuruLanding = () => {
 						{/* This will be tooltip that says "This actually updates it's not just static to make it looks good" */}
 						<p className="text-xs text-muted-foreground">© 2025 InterviewGuru.io. All rights reserved.</p>
 					</div>
-					<div className="flex">
-						<div>
-							<p>Legal</p>
-							<Link href={"/policies"} />
-							<Link href={"/policies/terms"} />
-							<Link href={"/policies/refund"} />
-							<Link href={"/policies/cancellation-policy"} />
+					<div className="flex items-left gap-20">
+						<div className="flex flex-col">
+							<p className="font-bold pb-3 cursor-default">Legal</p>
+							<div className="flex flex-col gap-2 text-muted-foreground font-light text-sm">
+								<Link className="hover:text-primary" href={"/policies/terms"}>
+									Terms of Service
+								</Link>
+								<Link className="hover:text-primary" href={"/policies/refund"}>
+									Refund Policy
+								</Link>
+								<Link className="hover:text-primary" href={"/policies/cancellation-policy"}>
+									Cancellation Policy
+								</Link>
+							</div>
 						</div>
 						<div className="flex flex-col">
-							<p>Pages</p>
-							<Link href={"https://discord.com/invite/XwUJu7tBHW"} className="flex gap-1 items-center">
-								<FaDiscord />
-								Join the community
-							</Link>
-							<Link href={"https://app.interviewguru.io/sign-in"}>Sign in to account</Link>
-							<Link href={"https://app.interviewguru.io/sign-up"}>Create account</Link>
+							<p className="font-bold pb-3 cursor-default">Pages</p>
+							<div className="flex flex-col gap-2 text-muted-foreground font-light text-sm">
+								<Link href={"https://discord.com/invite/XwUJu7tBHW"} className="flex gap-1 items-center">
+									<IconBrandDiscord size={17} />
+									Join the community
+								</Link>
+								<Link href={"https://app.interviewguru.io/sign-in"}>Sign in to account</Link>
+								<Link href={"https://app.interviewguru.io/sign-up"}>Create account</Link>
+							</div>
 						</div>
 					</div>
 				</div>
