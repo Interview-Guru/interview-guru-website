@@ -34,7 +34,7 @@ const PolicyPage = () => {
 				<div className="px-3 min-h-[70vh] flex gap-5 flex-col max-w-xl mx-auto">
 					{policyCards.map((policyCard) => {
 						return (
-							<Link href={`/policy/${policyCard.link}`}>
+							<Link key={policyCard.title} href={`/policy/${policyCard.link}`}>
 								<Card className="bg-background">
 									<CardHeader className="text-xl font-semibold">{policyCard.title}</CardHeader>
 									<CardDescription className="px-4">{policyCard.description}</CardDescription>
