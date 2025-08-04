@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useState } from "react";
+import React, { ReactNode, useState } from "react";
 import { Star, Target, Zap, Brain, Award, Check, ArrowRight, Code, Building } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
@@ -8,8 +8,10 @@ import { Badge } from "@/components/ui/badge";
 import { Avatar, AvatarFallback } from "@/components/ui/avatar";
 import { SmallLogo } from "@/components/SmallLogo";
 import Aurora from "@/components/react-bits/Aurora";
-import { FaDiscord, FaStar } from "react-icons/fa";
+import { FaDiscord, FaInstagram, FaLinkedin, FaStar, FaTwitter } from "react-icons/fa";
 import Link from "next/link";
+import { FaX, FaXTwitter } from "react-icons/fa6";
+import { IconType } from "react-icons";
 
 const InterviewGuruLanding = () => {
 	const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -242,20 +244,53 @@ const InterviewGuruLanding = () => {
 	};
 
 	const FooterSection = () => {
+		const SocialMediaIcon = ({ icon, link }: { icon: ReactNode; link: string }) => {
+			return (
+				<Link href={link}>
+					<div className="w-5 h-5">{icon}</div>
+				</Link>
+			);
+		};
+
+		const socialMediaIconsData = [
+			{ icon: <FaXTwitter className="w-5 h-5" />, link: "#" },
+			{ icon: <FaInstagram className="w-5 h-5" />, link: "#" },
+			{ icon: <FaLinkedin className="w-5 h-5" />, link: "#" },
+		];
+
 		const SocialMediaLinks = () => {
-			return <div>Social media links</div>;
+			return (
+				<div className="flex gap-2 text-muted-foreground pt-2">
+					{socialMediaIconsData.map((socialMediaIcon) => {
+						return <SocialMediaIcon icon={socialMediaIcon.icon} link={socialMediaIcon.link} />;
+					})}
+				</div>
+			);
 		};
 
 		return (
 			<footer className="flex px-4 py-20">
 				<div className="flex max-w-7xl m-auto justify-between w-full">
 					<div className="flex flex-col gap-2">
-						<SmallLogo showText={true} />
-						<p></p>
+						<div className="flex items-left">
+							<SmallLogo showText={true} outline={true} />
+						</div>
+						<p className="text-sm max-w-xs text-muted-foreground">
+							InterviewGuru is an AI powered platform that enables most optimal interview preparation for technical
+							interviews.
+						</p>
 						<SocialMediaLinks />
-						<p>Systems online</p>{" "}
+						<Badge
+							variant="outline"
+							className="flex items-center gap-2 text-xs tiny font-light rounded-full cursor-default my-4"
+						>
+							<span className="relative h-2 w-2 rounded-full bg-green-400">
+								<span className="absolute inset-0 rounded-full bg-green-400 animate-ping opacity-75" />
+							</span>
+							Systems online
+						</Badge>
 						{/* This will be tooltip that says "This actually updates it's not just static to make it looks good" */}
-						<div>InterviewGuru. All rights reserved.</div>
+						<p className="text-xs text-muted-foreground">© 2025 InterviewGuru.io. All rights reserved.</p>
 					</div>
 					<div className="flex">
 						<div>
