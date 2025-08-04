@@ -1,8 +1,9 @@
 "use client";
 
-import { FooterSection, HeaderSection } from "../page";
+import { HeaderSection } from "@/components/Header";
 import { Card, CardDescription, CardHeader } from "@/components/ui/card";
 import Link from "next/link";
+import { FooterSection } from "@/components/Footer";
 
 const PolicyPage = () => {
 	const policyCards = [

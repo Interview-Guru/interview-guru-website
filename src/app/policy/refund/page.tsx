@@ -1,5 +1,8 @@
-import { FooterSection, HeaderSection } from "@/app/page";
+"use client";
+
 import BlogPageContentComponent from "@/components/BlogPageContentComponent";
+import { HeaderSection } from "@/components/Header";
+import { FooterSection } from "@/components/Footer";
 
 const title = "Refund & Cancellation Policy";
 const lastUpdatedDate = "August 4th, 2025";
