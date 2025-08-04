@@ -8,7 +8,8 @@ import { Badge } from "@/components/ui/badge";
 import { Avatar, AvatarFallback } from "@/components/ui/avatar";
 import { SmallLogo } from "@/components/SmallLogo";
 import Aurora from "@/components/react-bits/Aurora";
-import { FaStar } from "react-icons/fa";
+import { FaDiscord, FaStar } from "react-icons/fa";
+import Link from "next/link";
 
 const InterviewGuruLanding = () => {
 	const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -136,7 +137,7 @@ const InterviewGuruLanding = () => {
 	const HeaderSection = () => {
 		return (
 			<header className="sticky bg-background top-0 w-full border-b">
-				<div className="flex justify-between p-2 items-center max-w-[1314px] m-auto">
+				<div className="flex justify-between p-2 items-center max-w-7xl m-auto">
 					{" "}
 					<div className="md:hidden">
 						<SmallLogo showText={false} />
@@ -239,10 +240,52 @@ const InterviewGuruLanding = () => {
 			</div>
 		);
 	};
+
+	const FooterSection = () => {
+		const SocialMediaLinks = () => {
+			return <div>Social media links</div>;
+		};
+
+		return (
+			<footer className="flex px-4 py-20">
+				<div className="flex max-w-7xl m-auto justify-between w-full">
+					<div className="flex flex-col gap-2">
+						<SmallLogo showText={true} />
+						<p></p>
+						<SocialMediaLinks />
+						<p>Systems online</p>{" "}
+						{/* This will be tooltip that says "This actually updates it's not just static to make it looks good" */}
+						<div>InterviewGuru. All rights reserved.</div>
+					</div>
+					<div className="flex">
+						<div>
+							<p>Legal</p>
+							<Link href={"/policies"} />
+							<Link href={"/policies/terms"} />
+							<Link href={"/policies/refund"} />
+							<Link href={"/policies/cancellation-policy"} />
+						</div>
+						<div className="flex flex-col">
+							<p>Pages</p>
+							<Link href={"https://discord.com/invite/XwUJu7tBHW"} className="flex gap-1 items-center">
+								<FaDiscord />
+								Join the community
+							</Link>
+							<Link href={"https://app.interviewguru.io/sign-in"}>Sign in to account</Link>
+							<Link href={"https://app.interviewguru.io/sign-up"}>Create account</Link>
+						</div>
+					</div>
+				</div>
+			</footer>
+		);
+	};
+
 	return (
 		<div className="min-h-screen">
 			<HeaderSection />
 			<HeroSection />
+			<div className="w-full h-[200px] bg-white"></div>
+			<FooterSection />
 			{/* Hero Section */}
 			<section className="pt-32 pb-20 px-6 bg-white">
 				<div className="grid grid-cols-2 md:grid-cols-4 gap-8 max-w-2xl mx-auto">
@@ -500,10 +543,9 @@ const InterviewGuruLanding = () => {
 			{/* CTA Section */}
 			<section className="py-20 px-6">
 				<div className="container mx-auto text-center">
-					<h2 className="text-4xl md:text-5xl font-bold mb-6">Ready to Land Your Dream Job?</h2>
+					<h2 className="text-4xl md:text-5xl font-bold mb-6">You Don't Have To Risk Getting Caugh Cheating.?</h2>
 					<p className="text-xl text-gray-600 mb-8 max-w-2xl mx-auto">
-						Join thousands of engineers who&apos;ve used InterviewGuru to level up their careers and land high-paying
-						jobs at top companies.
+						Just learn what you need to, understand it and apply. Join IG today.
 					</p>
 					<Button size="lg">
 						Start Now <ArrowRight className="ml-2 w-5 h-5" />
@@ -559,6 +601,7 @@ const InterviewGuruLanding = () => {
 					</div>
 				</div>
 			</footer>
+			<FooterSection />
 		</div>
 	);
 };
