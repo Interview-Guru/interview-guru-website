@@ -213,13 +213,16 @@ const InterviewGuruLanding = () => {
 								Through interviewing and mentoring other engineers, we developed our own interview prep protocol that
 								leverages AI to accelerate the learning process.
 							</strong>{" "}
+							<br />
+							<br />
 							After successfully helping engineers land FAANG offers using this method,{" "}
 							<strong>
 								we decided to package our proven system into a platform that makes this approach available to everyone.
 							</strong>
+							<br />
 						</blockquote>
 
-						<div className="grid md:grid-cols-2 gap-8 mt-8">
+						<div className="grid md:grid-cols-2 gap-8 mt-10">
 							<div className="flex items-center gap-4">
 								<Avatar className="w-12 h-12">
 									<AvatarImage
