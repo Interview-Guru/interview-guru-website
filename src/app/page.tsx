@@ -182,7 +182,7 @@ const InterviewGuruLanding = () => {
 					variant="outline"
 					className="flex items-center gap-4 font-light p-2 rounded-full py-1 m-auto cursor-pointer mb-5"
 				>
-					<span className="flex text-lg md:text-lg gap-2 items-center">
+					<span className="flex md:text-lg gap-2 items-center">
 						Built by ex-interviews at <BsAmazon />
 					</span>
 					{/* <span className="flex items-centers gap-1 font-semibold md:text-lg">
