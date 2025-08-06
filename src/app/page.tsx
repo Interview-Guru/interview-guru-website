@@ -7,9 +7,11 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 import { Badge } from "@/components/ui/badge";
 import { Avatar, AvatarFallback } from "@/components/ui/avatar";
 import Aurora from "@/components/react-bits/Aurora";
-import { FaStar } from "react-icons/fa";
+import { FaFacebook, FaFacebookF, FaStar } from "react-icons/fa";
 import { HeaderSection } from "@/components/Header";
 import { FooterSection } from "@/components/Footer";
+import { BsAmazon, BsApple, BsFacebook, BsGoogle } from "react-icons/bs";
+import { FaMeta } from "react-icons/fa6";
 
 const InterviewGuruLanding = () => {
 	const testimonials = [
@@ -140,34 +142,33 @@ const InterviewGuruLanding = () => {
 								window.location.href = "https://app.interviewguru.io/sign-up";
 							}}
 							variant="outline"
-							className="flex items-center gap-2 font-light p-2 rounded-full py-1 m-auto cursor-pointer"
+							className="flex items-center gap-4 font-light p-2 rounded-full py-1 m-auto cursor-pointer "
 						>
-							Built by FAANG Engineers.
-							<span className="flex items-centers gap-1 font-semibold">
+							<span className="flex md:text-lg gap-2 items-center">
+								Built by ex-interviews at <BsAmazon />
+							</span>
+							<span className="flex items-centers gap-1 font-semibold md:text-lg">
 								Try it here
-								<ArrowRight className="w-3.5 h-4" />
+								<ArrowRight className="w-3.5 h-4 md:h-7 md:w-4" />
 							</span>
 						</Badge>
-						<h1 className="text-4xl font-bold text-center cursor-default">
+						<h1 className="max-w-3xl text-4xl md:text-5xl lg:text-6xl font-bold text-center cursor-default mx-auto">
 							AI Powered Interview Prep That Actually Works
 						</h1>
-						<p className="text-muted-foreground font-light cursor-default text-center max-w-lg m-auto">
-							Get a personalized learning path with an AI mentor that knows you—skip generic practice and get content
-							tailored to your exact target role.
+						<p className="text-muted-foreground font-light cursor-default text-center max-w-lg m-auto md:text-lg">
+							Get a personalized learning path with an AI mentor and skip months of random tutorials and get
+							laser-focused prep for your exact target role.
 						</p>
 						<Button
 							onClick={() => {
 								window.location.href = "https://app.interviewguru.io/sign-up";
 							}}
-							className="w-full md:w-[220px] m-auto"
+							className="w-full md:w-[220px] m-auto md:text-lg md:p-6 md:font-bold"
 						>
 							Start Now
 						</Button>
-						<Badge
-							variant="outline"
-							className="m-auto flex flex-col items-center gap-2 rounded-2xl border-0.5 border p-3"
-						>
-							<p className="text-xs m-auto font-light cursor-default">Trusted by 1000+ Developers</p>
+						<Badge variant="outline" className="m-auto flex items-center gap-2 rounded-2xl border-0.5 border p-3">
+							<p className="text-xs md:text-md m-auto font-light cursor-default">Trusted by 1000+ Developers</p>
 							<div className="flex gap-0.75">
 								<FaStar className="w-3 h-3 text-yellow-400" />
 								<FaStar className="w-3 h-3 text-yellow-400" />
