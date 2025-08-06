@@ -5,7 +5,7 @@ import { Star, Target, Zap, Brain, Award, Check, ArrowRight, Code, Building } fr
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import { Avatar, AvatarFallback } from "@/components/ui/avatar";
+import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import Aurora from "@/components/react-bits/Aurora";
 import { FaFacebook, FaFacebookF, FaStar } from "react-icons/fa";
 import { HeaderSection } from "@/components/Header";
@@ -183,10 +183,81 @@ const InterviewGuruLanding = () => {
 		);
 	};
 
+	const AboutUsSection = () => {
+		return (
+			<div className="max-w-4xl mx-auto px-6">
+				{/* Main heading */}
+				<div className="text-center mb-12">
+					<h2 className="text-2xl md:text-4xl font-bold text-foreground max-w-2xl m-auto">
+						We built InterviewGuru because it&apos;s what we wish existed
+					</h2>
+				</div>
+
+				{/* Main story card */}
+				<Card className="bg-card border border-border">
+					<CardContent className="md:px-10 md:py-8">
+						<blockquote className="md:text-xl leading-relaxed text-muted-foreground mb-8 font-light">
+							We were tired of wasting months grinding through random Leetcode problems that didn&apos;t actually
+							prepare us for real Amazon interviews. Starting from nothing, we both worked our way up to senior,
+							principle and staff level positions by figuring out the hard way that success comes from understanding
+							patterns and core concepts, not memorizing solutions.
+							<br />
+							<br />
+							Through multiple interview cycles and mentoring other engineers, we developed our own interview prep
+							protocol that leverages AI to accelerate the learning process. After successfully helping engineers land
+							FAANG offers using this method, we decided to package our proven system into a platform that makes this
+							approach available to everyone.
+						</blockquote>
+
+						<div className="grid md:grid-cols-2 gap-8 mt-8">
+							<div className="flex items-center gap-4">
+								<Avatar className="w-12 h-12">
+									<AvatarImage
+										src="https://media.licdn.com/dms/image/v2/D5603AQGa9BiYr8aywA/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1698988692214?e=1757548800&v=beta&t=zAZiYQ1YvRqdEvMGHZ2crn9hjC1vNyDuUHpcGaRrJKM"
+										alt="Shane Perera"
+									/>
+									<AvatarFallback>SP</AvatarFallback>
+								</Avatar>
+								<div>
+									<div className="font-semibold text-foreground">Shane Perera</div>
+									<div className="text-xs text-muted-foreground">Co-founder, InterviewGuru</div>
+									<div className="flex items-center gap-1 text-xs text-muted-foreground">
+										Amazon Alumini
+										<BsAmazon />
+									</div>
+								</div>
+							</div>
+
+							<div className="flex items-center gap-4">
+								<Avatar className="w-12 h-12">
+									<AvatarImage
+										src="https://media.licdn.com/dms/image/v2/D5603AQEtXTI9vN7DtQ/profile-displayphoto-shrink_800_800/B56ZYQMAycHQAc-/0/1744028308510?e=1757548800&v=beta&t=CQFR2ob8SMgGyOO7Sqxzz83fmCD5_hAzIMrry3RpTWQ"
+										alt="Luka Zoric"
+									/>
+									<AvatarFallback>LZ</AvatarFallback>
+								</Avatar>
+								<div>
+									<div className="font-semibold text-foreground">Luka Zoric</div>
+									<div className="text-xs text-muted-foreground">Co-founder, InterviewGuru</div>
+									<div className="flex items-center gap-1 text-xs text-muted-foreground">
+										Amazon Alumini
+										<BsAmazon />
+									</div>
+								</div>
+							</div>
+						</div>
+					</CardContent>
+				</Card>
+			</div>
+		);
+	};
+
 	return (
 		<div className="min-h-screen">
 			<HeaderSection />
 			<HeroSection />
+			<AboutUsSection />
+
 			<FooterSection />
 
 			<div className="w-full h-[200px] bg-white"></div>
