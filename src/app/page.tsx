@@ -182,7 +182,7 @@ const InterviewGuruLanding = () => {
 					variant="outline"
 					className="flex items-center gap-4 font-light p-2 rounded-full py-1 m-auto cursor-pointer mb-5"
 				>
-					<span className="flex md:text-lg gap-2 items-center">
+					<span className="flex text-lg md:text-lg gap-2 items-center">
 						Built by ex-interviews at <BsAmazon />
 					</span>
 					{/* <span className="flex items-centers gap-1 font-semibold md:text-lg">
@@ -277,12 +277,27 @@ const InterviewGuruLanding = () => {
 		);
 	};
 
+	const CTASection = () => {
+		return (
+			<section className="py-20 px-6">
+				<div className="container mx-auto text-center">
+					<h2 className="text-4xl md:text-5xl font-bold mb-6">You Don&apos;t Have To Risk Getting Caugh Cheating.?</h2>
+					<p className="text-xl text-gray-600 mb-8 max-w-2xl mx-auto">
+						Just learn what you need to, understand it and apply. Join IG today.
+					</p>
+					<Button size="lg">
+						Start Now <ArrowRight className="ml-2 w-5 h-5" />
+					</Button>
+				</div>
+			</section>
+		);
+	};
+
 	return (
 		<div className="min-h-screen">
 			<HeaderSection />
 			<HeroSection />
 			<AboutUsSection />
-
 			<FooterSection />
 
 			<div className="w-full h-[200px] bg-white"></div>
@@ -540,19 +555,6 @@ const InterviewGuruLanding = () => {
 			</section>
 
 			<div>COMMON QUESTIONS</div>
-			{/* CTA Section */}
-			<section className="py-20 px-6">
-				<div className="container mx-auto text-center">
-					<h2 className="text-4xl md:text-5xl font-bold mb-6">You Don&apos;t Have To Risk Getting Caugh Cheating.?</h2>
-					<p className="text-xl text-gray-600 mb-8 max-w-2xl mx-auto">
-						Just learn what you need to, understand it and apply. Join IG today.
-					</p>
-					<Button size="lg">
-						Start Now <ArrowRight className="ml-2 w-5 h-5" />
-					</Button>
-				</div>
-			</section>
-			<FooterSection />
 		</div>
 	);
 };
