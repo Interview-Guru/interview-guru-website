@@ -192,7 +192,7 @@ const InterviewGuruLanding = () => {
 				</Badge>
 				<div className="text-center mb-12">
 					<h2 className="text-2xl md:text-4xl font-bold text-foreground max-w-2xl m-auto">
-						&quot;We built InterviewGuru because it&apos;s what we wish existed&quot;
+						We built InterviewGuru because it&apos;s what we wish existed
 					</h2>
 				</div>
 
