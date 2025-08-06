@@ -161,7 +161,7 @@ const InterviewGuruLanding = () => {
 							onClick={() => {
 								window.location.href = "https://app.interviewguru.io/sign-up";
 							}}
-							className="w-full md:w-[220px] m-auto md:text-lg md:p-6 md:font-bold"
+							className="w-full md:w-[220px] m-auto md:text-lg md:p-6"
 						>
 							Start Now
 						</Button>
