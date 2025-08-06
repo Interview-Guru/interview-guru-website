@@ -10,8 +10,10 @@ import Aurora from "@/components/react-bits/Aurora";
 import { FaFacebook, FaFacebookF, FaStar } from "react-icons/fa";
 import { HeaderSection } from "@/components/Header";
 import { FooterSection } from "@/components/Footer";
-import { BsAmazon, BsApple, BsFacebook, BsGoogle } from "react-icons/bs";
+import { BsAmazon, BsApple, BsFacebook, BsGoogle, BsLinkedin } from "react-icons/bs";
 import { FaMeta } from "react-icons/fa6";
+import { LuLinkedin } from "react-icons/lu";
+import Link from "next/link";
 
 const InterviewGuruLanding = () => {
 	const testimonials = [
@@ -137,21 +139,17 @@ const InterviewGuruLanding = () => {
 				</div>
 				<div className="h-[calc(100svh-52px)] flex flex-col justify-around">
 					<section className="px-6 flex flex-col gap-5">
-						<Badge
-							onClick={() => {
-								window.location.href = "https://app.interviewguru.io/sign-up";
-							}}
-							variant="outline"
-							className="flex items-center gap-4 font-light p-2 rounded-full py-1 m-auto cursor-pointer "
-						>
-							<span className="flex md:text-lg gap-2 items-center">
-								Built by ex-interviews at <BsAmazon />
-							</span>
-							<span className="flex items-centers gap-1 font-semibold md:text-lg">
-								Try it here
-								<ArrowRight className="w-3.5 h-4 md:h-7 md:w-4" />
-							</span>
+						<Badge variant="outline" className="m-auto flex items-center gap-2 rounded-2xl border-0.5 border p-3">
+							<p className="text-xs md:text-md m-auto font-light cursor-default">Trusted by 1000+ Engineers</p>
+							<div className="flex gap-0.75">
+								<FaStar className="w-3 h-3 text-yellow-400" />
+								<FaStar className="w-3 h-3 text-yellow-400" />
+								<FaStar className="w-3 h-3 text-yellow-400" />
+								<FaStar className="w-3 h-3 text-yellow-400" />
+								<FaStar className="w-3 h-3 text-yellow-400" />
+							</div>
 						</Badge>
+
 						<h1 className="max-w-3xl text-4xl md:text-5xl lg:text-6xl font-bold text-center cursor-default mx-auto">
 							AI Powered Interview Prep That Actually Works
 						</h1>
@@ -167,16 +165,6 @@ const InterviewGuruLanding = () => {
 						>
 							Start Now
 						</Button>
-						<Badge variant="outline" className="m-auto flex items-center gap-2 rounded-2xl border-0.5 border p-3">
-							<p className="text-xs md:text-md m-auto font-light cursor-default">Trusted by 1000+ Developers</p>
-							<div className="flex gap-0.75">
-								<FaStar className="w-3 h-3 text-yellow-400" />
-								<FaStar className="w-3 h-3 text-yellow-400" />
-								<FaStar className="w-3 h-3 text-yellow-400" />
-								<FaStar className="w-3 h-3 text-yellow-400" />
-								<FaStar className="w-3 h-3 text-yellow-400" />
-							</div>
-						</Badge>
 					</section>
 				</div>
 			</div>
@@ -187,26 +175,48 @@ const InterviewGuruLanding = () => {
 		return (
 			<div className="max-w-4xl mx-auto px-6">
 				{/* Main heading */}
+				<Badge
+					onClick={() => {
+						window.location.href = "https://app.interviewguru.io/sign-up";
+					}}
+					variant="outline"
+					className="flex items-center gap-4 font-light p-2 rounded-full py-1 m-auto cursor-pointer mb-5"
+				>
+					<span className="flex md:text-lg gap-2 items-center">
+						Built by ex-interviews at <BsAmazon />
+					</span>
+					{/* <span className="flex items-centers gap-1 font-semibold md:text-lg">
+						Try it here
+						<ArrowRight className="w-3.5 h-4 md:h-7 md:w-4" />
+					</span> */}
+				</Badge>
 				<div className="text-center mb-12">
 					<h2 className="text-2xl md:text-4xl font-bold text-foreground max-w-2xl m-auto">
-						We built InterviewGuru because it&apos;s what we wish existed
+						&quot;We built InterviewGuru because it&apos;s what we wish existed&quot;
 					</h2>
 				</div>
 
 				{/* Main story card */}
-				<Card className="bg-card border border-border">
+				<Card className="bg-card/30 border border-border">
 					<CardContent className="md:px-10 md:py-8">
-						<blockquote className="md:text-xl leading-relaxed text-muted-foreground mb-8 font-light">
+						<blockquote className="md:text-xl leading-relaxed text-muted-foreground mb-8 font-extralight">
 							We were tired of wasting months grinding through random Leetcode problems that didn&apos;t actually
-							prepare us for real Amazon interviews. Starting from nothing, we both worked our way up to senior,
-							principle and staff level positions by figuring out the hard way that success comes from understanding
-							patterns and core concepts, not memorizing solutions.
+							prepare us for real interviews.
 							<br />
 							<br />
-							Through multiple interview cycles and mentoring other engineers, we developed our own interview prep
-							protocol that leverages AI to accelerate the learning process. After successfully helping engineers land
-							FAANG offers using this method, we decided to package our proven system into a platform that makes this
-							approach available to everyone.
+							Starting from nothing, we both worked our way up to senior, principle and staff level positions by
+							figuring out the hard way that{" "}
+							<strong>success comes from understanding patterns and core concepts, not memorizing solutions.</strong>
+							<br />
+							<br />
+							<strong>
+								Through interviewing and mentoring other engineers, we developed our own interview prep protocol that
+								leverages AI to accelerate the learning process.
+							</strong>{" "}
+							After successfully helping engineers land FAANG offers using this method,{" "}
+							<strong>
+								we decided to package our proven system into a platform that makes this approach available to everyone.
+							</strong>
 						</blockquote>
 
 						<div className="grid md:grid-cols-2 gap-8 mt-8">
@@ -218,10 +228,16 @@ const InterviewGuruLanding = () => {
 									/>
 									<AvatarFallback>SP</AvatarFallback>
 								</Avatar>
-								<div>
-									<div className="font-semibold text-foreground">Shane Perera</div>
-									<div className="text-xs text-muted-foreground">Co-founder, InterviewGuru</div>
-									<div className="flex items-center gap-1 text-xs text-muted-foreground">
+								<div className="flex flex-col">
+									<Link
+										href={"https://www.linkedin.com/in/shane-h-perera/"}
+										className="font-semibold text-foreground flex gap-2 p-0 items-center hover:underline underline-offset-3"
+									>
+										Shane Perera
+										<BsLinkedin />
+									</Link>
+									<div className="text-xs text-muted-foreground font-semibold">Co-founder, InterviewGuru</div>
+									<div className="flex items-center gap-1 text-xs text-muted-foreground font-semibold">
 										Amazon Alumini
 										<BsAmazon />
 									</div>
@@ -236,10 +252,16 @@ const InterviewGuruLanding = () => {
 									/>
 									<AvatarFallback>LZ</AvatarFallback>
 								</Avatar>
-								<div>
-									<div className="font-semibold text-foreground">Luka Zoric</div>
-									<div className="text-xs text-muted-foreground">Co-founder, InterviewGuru</div>
-									<div className="flex items-center gap-1 text-xs text-muted-foreground">
+								<div className="flex flex-col">
+									<Link
+										href={"https://www.linkedin.com/in/luka-zoric/"}
+										className="font-semibold text-foreground flex gap-2 p-0 items-center hover:underline underline-offset-3"
+									>
+										Luka Zoric
+										<BsLinkedin />
+									</Link>
+									<div className="text-xs text-muted-foreground font-semibold">Co-founder, InterviewGuru</div>
+									<div className="flex items-center gap-1 text-xs text-muted-foreground font-semibold">
 										Amazon Alumini
 										<BsAmazon />
 									</div>
