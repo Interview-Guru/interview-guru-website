@@ -13,6 +13,7 @@ import { FooterSection } from "@/components/Footer";
 import { BsAmazon, BsLinkedin } from "react-icons/bs";
 import Link from "next/link";
 import ScrollableImageComponent from "@/components/ScrollableImageCarousel";
+import Image from "next/image";
 
 const InterviewGuruLanding = () => {
 	const testimonials = [
@@ -401,8 +402,8 @@ const InterviewGuruLanding = () => {
 							</div>
 
 							<div className="flex items-center gap-3 mb-8">
-								<div className="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center">
-									<div className="w-6 h-6 bg-primary rounded-full"></div>
+								<div className="w-11 h-11 bg-primary/5 outline-1 rounded-full flex items-center justify-center">
+									<Image src="/white_logo.png" alt="IG Logo" width={60} height={60} className="object-contain" />{" "}
 								</div>
 								<div>
 									<h3 className="text-2xl font-bold text-card-foreground">IG Pro Plan</h3>
@@ -457,8 +458,8 @@ const InterviewGuruLanding = () => {
 						{/* Monthly Plan */}
 						<div className="bg-background border border-border rounded-2xl p-8 relative">
 							<div className="flex items-center gap-3 mb-8">
-								<div className="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center">
-									<div className="w-6 h-6 bg-primary rounded-full"></div>
+								<div className="w-11 h-11 bg-primary/5 outline-1 rounded-full flex items-center justify-center">
+									<Image src="/white_logo.png" alt="IG Logo" width={60} height={60} className="object-contain" />{" "}
 								</div>
 								<div>
 									<h3 className="text-2xl font-bold text-card-foreground">IG Pro</h3>
