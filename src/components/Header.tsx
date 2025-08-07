@@ -7,7 +7,7 @@ export const HeaderSection = () => {
 		document.getElementById(sectionId)?.scrollIntoView({ behavior: "smooth" });
 	};
 	return (
-		<header className="sticky bg-background top-0 w-full border-b">
+		<header className="sticky bg-background/90  backdrop-blur-lg top-0 w-full border-b z-100">
 			<div className="flex justify-between p-2 items-center max-w-5xl m-auto">
 				<Link href={"/"}>
 					<div className="md:hidden">
