@@ -276,15 +276,8 @@ const InterviewGuruLanding = () => {
 
 	const CTASection = () => {
 		return (
-			<section className="min-h-[calc(100svh-52px)] md:min-h-[30vh] px-6 flex flex-col gap-5 justify-around">
+			<section className="px-6 flex flex-col gap-5 py-20">
 				<div className="max-w-6xl mx-auto flex flex-col gap-5">
-					<Badge variant="outline" className="flex items-center gap-4 font-light p-3 rounded-full py-1 m-auto">
-						<span className="flex md:text-lg gap-2 items-center">Average prep time ~8 weeks</span>
-						{/* <span className="flex items-centers gap-1 font-semibold md:text-lg">
-						Try it here
-						<ArrowRight className="w-3.5 h-4 md:h-7 md:w-4" />
-					</span> */}
-					</Badge>
 					<h2 className="max-w-2xl text-4xl md:text-5xl font-bold text-center cursor-default mx-auto">
 						Your Dream Job Is Absolutely Worth It
 					</h2>
@@ -518,8 +511,10 @@ const InterviewGuruLanding = () => {
 						</div>
 					</div>
 
-					<div className="text-center mt-12">
-						<p className="text-muted-foreground">Trusted by thousands of job seekers worldwide. Cancel anytime.</p>
+					<div className="text-left text-muted-foreground pt-6 text-xs font-light space-y-1">
+						<p>Trusted by thousands of job seekers worldwide. Cancel anytime.</p>
+						<p>Pro tip: Most companies reimburse interview prep as a professional development expense.</p>
+						<p>Note: Our price goes up with each new feature launch. Secure your founder&apos;s rate now.</p>
 					</div>
 				</div>
 			</section>
