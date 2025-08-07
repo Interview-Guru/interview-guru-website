@@ -489,10 +489,9 @@ const InterviewGuruLanding = () => {
 			<UsVsThemSection />
 			<SocialProof />
 			<PricingSection />
-			<FAQSection />
+			{/* <FAQSection /> */}
 			<CTASection />
 			<FooterSection />
-			{/* Pricing */}
 		</div>
 	);
 };
