@@ -513,7 +513,6 @@ const InterviewGuruLanding = () => {
 					</div>
 
 					<div className="text-left md:text-center text-muted-foreground pt-6 text-xs font-light space-y-1">
-						<p>Trusted by thousands of job seekers worldwide. Cancel anytime.</p>
 						<p>Pro tip: Most companies reimburse interview prep as a professional development expense.</p>
 						<p>Note: Our price goes up with each new feature launch. Secure your founder&apos;s rate now.</p>
 					</div>
