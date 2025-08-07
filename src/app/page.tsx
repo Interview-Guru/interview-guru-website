@@ -14,6 +14,7 @@ import { BsAmazon, BsLinkedin } from "react-icons/bs";
 import Link from "next/link";
 import ScrollableImageComponent from "@/components/ScrollableImageCarousel";
 import Image from "next/image";
+import CenterAlignedWithActiveBackgroundGray from "@/components/blocks/faq-sections/center-aligned";
 
 const InterviewGuruLanding = () => {
 	const testimonials = [
@@ -172,7 +173,11 @@ const InterviewGuruLanding = () => {
 	};
 
 	const FAQSection = () => {
-		return <div>FAQ section</div>;
+		return (
+			<div>
+				<CenterAlignedWithActiveBackgroundGray />
+			</div>
+		);
 	};
 
 	const AboutUsSection = () => {
@@ -374,7 +379,7 @@ const InterviewGuruLanding = () => {
 
 	const PricingSection = () => {
 		return (
-			<section className="min-h-[calc(100svh-52px)] flex flex-col justify-around py-20 pt-30">
+			<section className="min-h-[calc(100svh-52px)] flex flex-col justify-around py-10 pt-30">
 				<div className="mx-auto px-6">
 					<div className="text-center mb-16">
 						<Badge variant="outline" className="flex items-center gap-4 font-light p-3 rounded-full py-1 m-auto mb-5">
@@ -543,7 +548,7 @@ const InterviewGuruLanding = () => {
 			{/* <UsVsThemSection /> */}
 			{/* <SocialProof /> */}
 			<PricingSection />
-			{/* <FAQSection /> */}
+			<FAQSection />
 			<CTASection />
 			<FooterSection />
 		</div>
