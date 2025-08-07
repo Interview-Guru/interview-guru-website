@@ -15,7 +15,7 @@ import Link from "next/link";
 import ScrollableImageComponent from "@/components/ScrollableImageCarousel";
 import Image from "next/image";
 import CenterAlignedWithActiveBackgroundGray from "@/components/blocks/faq-sections/center-aligned";
-import { CheckCircle2, ListChecks, Lightbulb, Rocket } from "lucide-react";
+import { ListChecks, Lightbulb, Rocket } from "lucide-react";
 import { cn } from "@/lib/utils";
 
 const InterviewGuruLanding = () => {
@@ -198,46 +198,44 @@ const InterviewGuruLanding = () => {
 		);
 	};
 
-	const HowItWorksSection = ({ className }: { className?: string }) => {
+	const HowItWorksSection = () => {
 		const steps = [
 			{
 				icon: Target,
 				title: "Set your target",
-				body: "Choose your level, timeline, and companies. We align your prep to what actually gets asked.",
+				body: "Answer a short questionnaire about your role level, timeline, and the companies you're targeting. This sets up a pathway that's tuned to your goals from day one.",
 			},
 			{
 				icon: ListChecks,
 				title: "Get your pathway",
-				body: "A personalized sequence across topics → prerequisites → company patterns. High-ROI only.",
+				body: "We guide you through a personalised sequence: topics → prerequisites → company-specific questions. No decision fatigue, no wasted reps.",
 			},
 			{
 				icon: Lightbulb,
-				title: "Practice with guidance",
-				body: "Tutor-style hints and error analysis help you progress without giving away the solution.",
+				title: "Practice with AI guidance",
+				body: "Instead of dumping a solution in your lap, our AI tutor walks you through each question step-by-step. Your job is not to remember but understand.",
 			},
 			{
 				icon: Rocket,
 				title: "Lock it in",
-				body: "Close gaps, rehearse company-specific patterns, and run a final mock before the real loop.",
+				body: "Revisit weak spots, drill company-specific patterns, and run a final mock loop so you're ready when it counts.",
 			},
 		];
 
 		return (
-			<section className={cn("w-full py-16 md:py-24", className)}>
-				<div className="mx-auto w-full max-w-6xl px-6">
-					<div className="mb-10 flex items-center gap-2 text-sm text-muted-foreground">
-						<CheckCircle2 className="h-4 w-4" />
-						<span>Built by ex-interviewers. Designed for outcomes.</span>
-					</div>
-
-					<h2 className="text-3xl font-semibold tracking-tight md:text-4xl">How it works</h2>
-					<p className="mt-2 max-w-2xl text-muted-foreground">
-						A focused path that cuts noise and gets you ready for the actual interview loop.
+			<section className="px-6 flex flex-col gap-5 py-30">
+				<div className="max-w-6xl mx-auto flex flex-col gap-5">
+					<Badge variant="outline" className="flex items-center gap-4 font-light p-3 rounded-full py-1 m-auto">
+						<span className="flex md:text-lg gap-2 items-center">Most Optimal Interview Prep</span>
+					</Badge>
+					<h2 className="text-2xl md:text-4xl font-bold text-foreground max-w-2xl m-auto">How IG Works</h2>
+					<p className="text-muted-foreground font-light cursor-default text-center max-w-lg m-auto md:text-lg">
+						A clear, focused path from setup to final prep—so all you need to do is keep solving.
 					</p>
 
 					<div className="mt-10 grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-4">
 						{steps.map(({ icon: Icon, title, body }, i) => (
-							<Card key={i} className="border-muted/50">
+							<Card key={i} className="bg-card/30 border border-border">
 								<CardContent className="p-5">
 									<div className="mb-3 inline-flex h-10 w-10 items-center justify-center rounded-xl border bg-card">
 										<Icon className="h-5 w-5" aria-hidden="true" />
@@ -249,21 +247,21 @@ const InterviewGuruLanding = () => {
 						))}
 					</div>
 
-					<div className="mt-10">
-						<Button size="lg" className="px-6">
-							Start your plan in 60 seconds
+					<div className="mt-5 w-full">
+						<Button
+							onClick={() => {
+								window.location.href = "https://app.interviewguru.io/sign-up";
+							}}
+							className="w-full md:w-[320px] m-auto md:text-lg md:p-6 m-auto"
+						>
+							Start Your Plan In 60 Seconds
 						</Button>
-						<p className="mt-3 text-xs text-muted-foreground">
-							No fluff. Just the highest‑signal path for your targets.
-						</p>
+
+						<p className="mt-3 text-xs text-muted-foreground"></p>
 					</div>
 				</div>
 			</section>
 		);
-	};
-
-	const UsVsThemSection = () => {
-		return <div>Us vs them section</div>;
 	};
 
 	const PricingSection = () => {
