@@ -12,6 +12,7 @@ import { HeaderSection } from "@/components/Header";
 import { FooterSection } from "@/components/Footer";
 import { BsAmazon, BsLinkedin } from "react-icons/bs";
 import Link from "next/link";
+import ScrollableImageComponent from "@/components/ScrollableImageCarousel";
 
 const InterviewGuruLanding = () => {
 	const testimonials = [
@@ -291,10 +292,19 @@ const InterviewGuruLanding = () => {
 		);
 	};
 
+	const InterviewWithTheseCompaniesSection = () => {
+		return (
+			<div className="min-h-5xl pb-30">
+				<ScrollableImageComponent />
+			</div>
+		);
+	};
+
 	return (
 		<div className="min-h-screen">
 			<HeaderSection />
 			<HeroSection />
+			<InterviewWithTheseCompaniesSection />
 			<AboutUsSection />
 			<FooterSection />
 
