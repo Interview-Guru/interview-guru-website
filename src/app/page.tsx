@@ -285,8 +285,8 @@ const InterviewGuruLanding = () => {
 						<ArrowRight className="w-3.5 h-4 md:h-7 md:w-4" />
 					</span> */}
 					</Badge>
-					<h2 className="max-w-3xl text-4xl md:text-5xl font-bold text-center cursor-default mx-auto">
-						Your Perfect Job Is One Preparation Away
+					<h2 className="max-w-2xl text-4xl md:text-5xl font-bold text-center cursor-default mx-auto">
+						Your Dream Job Is Absolutely Worth It
 					</h2>
 					<p className="text-muted-foreground font-light cursor-default text-center max-w-lg m-auto md:text-lg">
 						Join thousands who went from interview anxiety to job offers in as early as 8 weeks.
@@ -380,7 +380,7 @@ const InterviewGuruLanding = () => {
 
 	const PricingSection = () => {
 		return (
-			<section className="min-h-[calc(100svh-52px)] flex flex-col justify-around py-20">
+			<section className="min-h-[calc(100svh-52px)] flex flex-col justify-around py-20 pt-30">
 				<div className="mx-auto px-6">
 					<div className="text-center mb-16">
 						<Badge variant="outline" className="flex items-center gap-4 font-light p-3 rounded-full py-1 m-auto mb-5">
