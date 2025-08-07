@@ -394,11 +394,11 @@ const InterviewGuruLanding = () => {
 
 					<div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
 						{/* Quarterly Plan - Best Deal */}
-						<div className="bg-card/30 border-2 rounded-2xl p-8 relative">
+						<div className="bg-card/30 outline outline-green-400 rounded-2xl p-8 relative">
 							<div className="absolute -top-3 left-1/2 transform -translate-x-1/2">
-								<div className="bg-primary text-primary-foreground px-4 py-1 rounded-full text-sm font-semibold">
+								<Badge variant="outline" className="text-white outline-green-400 outline-1 rounded-sm bg-green-900">
 									Best Deal
-								</div>
+								</Badge>
 							</div>
 
 							<div className="flex items-center gap-3 mb-8">
