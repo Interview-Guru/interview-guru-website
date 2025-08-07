@@ -7,12 +7,10 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 import { Badge } from "@/components/ui/badge";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import Aurora from "@/components/react-bits/Aurora";
-import { FaFacebook, FaFacebookF, FaStar } from "react-icons/fa";
+import { FaStar } from "react-icons/fa";
 import { HeaderSection } from "@/components/Header";
 import { FooterSection } from "@/components/Footer";
-import { BsAmazon, BsApple, BsFacebook, BsGoogle, BsLinkedin } from "react-icons/bs";
-import { FaMeta } from "react-icons/fa6";
-import { LuLinkedin } from "react-icons/lu";
+import { BsAmazon, BsLinkedin } from "react-icons/bs";
 import Link from "next/link";
 
 const InterviewGuruLanding = () => {
