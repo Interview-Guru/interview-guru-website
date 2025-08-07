@@ -394,7 +394,7 @@ const InterviewGuruLanding = () => {
 
 					<div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
 						{/* Quarterly Plan - Best Deal */}
-						<div className="bg-card/30 border-1 border-primary rounded-2xl p-8 relative">
+						<div className="bg-card/30 border-2 rounded-2xl p-8 relative">
 							<div className="absolute -top-3 left-1/2 transform -translate-x-1/2">
 								<div className="bg-primary text-primary-foreground px-4 py-1 rounded-full text-sm font-semibold">
 									Best Deal
@@ -458,7 +458,7 @@ const InterviewGuruLanding = () => {
 						{/* Monthly Plan */}
 						<div className="bg-background border border-border rounded-2xl p-8 relative">
 							<div className="flex items-center gap-3 mb-8">
-								<div className="w-11 h-11 bg-primary/5 outline-1 rounded-full flex items-center justify-center">
+								<div className="w-11 h-11 outline-1 rounded-full flex items-center justify-center">
 									<Image src="/white_logo.png" alt="IG Logo" width={60} height={60} className="object-contain" />{" "}
 								</div>
 								<div>
