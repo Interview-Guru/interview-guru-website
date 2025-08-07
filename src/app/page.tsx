@@ -385,7 +385,7 @@ const InterviewGuruLanding = () => {
 					</span> */}
 						</Badge>
 						<h2 className="text-2xl md:text-4xl font-bold text-foreground max-w-2xl m-auto mb-1.5">
-							Prepare smarter, interview better & secure high-paying roles
+							Prepare Smarter. Interview better. Secure High-Paying Roles
 						</h2>
 						<p className="text-muted-foreground text-lg">
 							Get full access to everything you need to land your dream job.
