@@ -252,7 +252,7 @@ const InterviewGuruLanding = () => {
 							onClick={() => {
 								window.location.href = "https://app.interviewguru.io/sign-up";
 							}}
-							className="w-full md:w-[320px] m-auto md:text-lg md:p-6 m-auto"
+							className="w-full md:w-[320px] m-auto md:text-lg md:p-6"
 						>
 							Start Your Plan In 60 Seconds
 						</Button>
