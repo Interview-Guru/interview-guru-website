@@ -203,8 +203,8 @@ const InterviewGuruLanding = () => {
 							prepare us for real interviews.
 							<br />
 							<br />
-							Starting from nothing, we both worked our way up to senior, principle and staff level positions by
-							figuring out the hard way that{" "}
+							Starting from nothing, we both worked our way up to senior and principle level positions by figuring out
+							the hard way that{" "}
 							<strong>success comes from understanding patterns and core concepts, not memorizing solutions.</strong>
 							<br />
 							<br />
