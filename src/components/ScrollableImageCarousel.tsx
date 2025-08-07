@@ -6,14 +6,14 @@ const ScrollableImageComponent = () => {
 
 	// Sample company logos/images - you can replace these with your own
 	const images = [
-		{ name: "TechCorp", logo: "https://via.placeholder.com/200x100/4F46E5/FFFFFF?text=TechCorp" },
-		{ name: "InnovateAI", logo: "https://via.placeholder.com/200x100/059669/FFFFFF?text=InnovateAI" },
-		{ name: "DataFlow", logo: "https://via.placeholder.com/200x100/DC2626/FFFFFF?text=DataFlow" },
-		{ name: "CloudSync", logo: "https://via.placeholder.com/200x100/7C3AED/FFFFFF?text=CloudSync" },
-		{ name: "NextGen", logo: "https://via.placeholder.com/200x100/EA580C/FFFFFF?text=NextGen" },
-		{ name: "WebForge", logo: "https://via.placeholder.com/200x100/0891B2/FFFFFF?text=WebForge" },
-		{ name: "AppLab", logo: "https://via.placeholder.com/200x100/BE185D/FFFFFF?text=AppLab" },
-		{ name: "CodeBase", logo: "https://via.placeholder.com/200x100/16A34A/FFFFFF?text=CodeBase" },
+		{ name: "Amazon", logo: "/amazon.png" },
+		{ name: "Meta", logo: "/meta.png" },
+		{ name: "Atlassian", logo: "/atlassian.png" },
+		{ name: "Apple", logo: "/apple.png" },
+		{ name: "Netflix", logo: "/netflix.png" },
+		{ name: "Google", logo: "/google.png" },
+		{ name: "Tesla", logo: "/tesla.png" },
+		{ name: "NVIDIA", logo: "/nvidia.png" },
 	];
 
 	// Duplicate images for seamless loop
@@ -40,7 +40,7 @@ const ScrollableImageComponent = () => {
 			<div className="max-w-6xl mx-auto">
 				{/* Heading */}
 				<div className="text-center mb-12 flex flex-col">
-					<h2 className="text-2xl md:text-4xl font-bold text-foreground max-w-2xl m-auto">
+					<h2 className="text-2xl md:text-4xl font-bold text-foreground max-w-2xl m-auto mb-1.5">
 						Land Offers at Top Companies
 					</h2>
 					<p className="text-muted-foreground text-lg">
@@ -58,14 +58,14 @@ const ScrollableImageComponent = () => {
 						{allImages.map((image, index) => (
 							<div
 								key={`${image.name}-${index}`}
-								className="flex-shrink-0 bg-card/50 backdrop-blur-sm rounded-lg p-6 hover:bg-card/70 transition-all duration-300 hover:scale-105 border border-border"
+								className="flex-shrink-0 bg-card/50 backdrop-blur-sm rounded-lg hover:bg-card/70 transition-all duration-300 hover:scale-105 border border-border"
 								style={{ minWidth: "200px", height: "120px" }}
 							>
 								<div className="w-full h-full flex items-center justify-center">
 									<Image
 										src={image.logo}
 										alt={image.name}
-										width={200}
+										width={150}
 										height={100}
 										className="max-w-full max-h-full object-contain opacity-70 hover:opacity-100 transition-opacity duration-300"
 									/>

@@ -174,7 +174,7 @@ const InterviewGuruLanding = () => {
 		return (
 			<div className="max-w-4xl mx-auto px-6 cursor-default">
 				{/* Main heading */}
-				<Badge variant="outline" className="flex items-center gap-4 font-light p-2 rounded-full py-1 m-auto mb-5">
+				<Badge variant="outline" className="flex items-center gap-4 font-light p-3 rounded-full py-1 m-auto mb-5">
 					<span className="flex md:text-lg gap-2 items-center">
 						Built by ex-interviews at <BsAmazon />
 					</span>
