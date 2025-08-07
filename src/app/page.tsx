@@ -381,7 +381,7 @@ const InterviewGuruLanding = () => {
 	const PricingSection = () => {
 		return (
 			<div>
-				<section id="pricing" className="py-20 px-6 bg-gray-50">
+				<section id="pricing" className="py-20 px-6">
 					<div className="container mx-auto">
 						<div className="text-center mb-16">
 							<h2 className="text-4xl md:text-5xl font-bold mb-6">Simple, Transparent Pricing</h2>
@@ -485,9 +485,9 @@ const InterviewGuruLanding = () => {
 			<HeroSection />
 			<InterviewWithTheseCompaniesSection />
 			<AboutUsSection />
-			<HowItWorksSection />
-			<UsVsThemSection />
-			<SocialProof />
+			{/* <HowItWorksSection /> */}
+			{/* <UsVsThemSection /> */}
+			{/* <SocialProof /> */}
 			<PricingSection />
 			{/* <FAQSection /> */}
 			<CTASection />
