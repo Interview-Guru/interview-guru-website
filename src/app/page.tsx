@@ -223,7 +223,7 @@ const InterviewGuruLanding = () => {
 		];
 
 		return (
-			<section className="px-6 flex flex-col gap-5 py-30">
+			<section className="px-6 flex flex-col gap-5 py-30 pb-20">
 				<div className="max-w-6xl mx-auto flex flex-col gap-5">
 					<Badge variant="outline" className="flex items-center gap-4 font-light p-3 rounded-full py-1 m-auto">
 						<span className="flex md:text-lg gap-2 items-center">Most Optimal Interview Prep</span>
