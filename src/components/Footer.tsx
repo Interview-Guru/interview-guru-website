@@ -32,7 +32,7 @@ export const FooterSection = () => {
 	};
 
 	return (
-		<footer className="flex px-4 py-20 bg-gradient-to-t from-foreground/5 to-transparent">
+		<footer className="flex px-6 py-20 bg-gradient-to-t from-foreground/5 to-transparent">
 			<div className="flex max-w-5xl m-auto justify-between w-full flex-wrap gap-10">
 				<div className="flex flex-col gap-2 mb-5">
 					<div className="flex items-left">
