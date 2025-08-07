@@ -1,9 +1,9 @@
 "use client";
 
 import React from "react";
-import { Star, Target, Zap, Brain, Award, Check, Lock, Code, Building, Handshake } from "lucide-react";
+import { Target, Check, Lock } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
+import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import Aurora from "@/components/react-bits/Aurora";
@@ -15,123 +15,10 @@ import Link from "next/link";
 import ScrollableImageComponent from "@/components/ScrollableImageCarousel";
 import Image from "next/image";
 import CenterAlignedWithActiveBackgroundGray from "@/components/blocks/faq-sections/center-aligned";
+import { CheckCircle2, ListChecks, Lightbulb, Rocket } from "lucide-react";
+import { cn } from "@/lib/utils";
 
 const InterviewGuruLanding = () => {
-	const testimonials = [
-		{
-			name: "Sarah Chen",
-			role: "Software Engineer at Google",
-			content:
-				"InterviewGuru&apos;s AI mentor helped me understand patterns I was struggling with. Got my dream job in 8 weeks!",
-			avatar: "SC",
-			rating: 5,
-		},
-		{
-			name: "Marcus Rodriguez",
-			role: "Senior Engineer at Meta",
-			content: "The personalized path was exactly what I needed. No more wasting time on irrelevant problems.",
-			avatar: "MR",
-			rating: 5,
-		},
-		{
-			name: "Priya Patel",
-			role: "Engineer at Amazon",
-			content: "Built by Amazon engineers, for engineers. The quality and depth is unmatched.",
-			avatar: "PP",
-			rating: 5,
-		},
-		{
-			name: "David Kim",
-			role: "Staff Engineer at Stripe",
-			content: "Finally got past the interview barrier. The AI really knows when you understand vs just memorizing.",
-			avatar: "DK",
-			rating: 5,
-		},
-		{
-			name: "Lisa Thompson",
-			role: "Engineer at Block",
-			content: "Went from failing interviews to landing a $250k offer. This platform changed everything.",
-			avatar: "LT",
-			rating: 5,
-		},
-	];
-
-	const companies = [
-		"Google",
-		"Amazon",
-		"Meta",
-		"Apple",
-		"Microsoft",
-		"Netflix",
-		"Tesla",
-		"Uber",
-		"Airbnb",
-		"Stripe",
-		"Block",
-		"Canva",
-		"Atlassian",
-		"Shopify",
-		"Coinbase",
-		"DoorDash",
-		"Zoom",
-		"Slack",
-		"Figma",
-		"Notion",
-	];
-
-	const features = [
-		{
-			icon: <Brain className="w-8 h-8" />,
-			title: "AI Mentor That Knows You",
-			description:
-				"Your personal AI mentor understands your progress, strengths, and learning style to guide you through each problem.",
-		},
-		{
-			icon: <Target className="w-8 h-8" />,
-			title: "Company-Specific Preparation",
-			description:
-				"Tailored paths for 400+ companies including FAANG, unicorns, and top startups. Know exactly what each company asks.",
-		},
-		{
-			icon: <Zap className="w-8 h-8" />,
-			title: "Personalized Learning Path",
-			description:
-				"Skip the generic approach. Get a customized roadmap based on your target company, timeline, and current skill level.",
-		},
-		{
-			icon: <Code className="w-8 h-8" />,
-			title: "Real Understanding, Not Memorization",
-			description: "Our AI ensures you truly understand patterns and concepts, not just memorize solutions.",
-		},
-	];
-
-	const steps = [
-		{
-			number: "01",
-			title: "Choose Your Target Company",
-			description: "Select from 400+ companies including FAANG, unicorns, and top startups.",
-			icon: <Building className="w-6 h-6" />,
-		},
-		{
-			number: "02",
-			title: "Get Your Personalized Path",
-			description: "Our AI creates a custom learning roadmap based on your target and timeline.",
-			icon: <Target className="w-6 h-6" />,
-		},
-		{
-			number: "03",
-			title: "Learn With AI Guidance",
-			description: "Work through problems with your AI mentor that ensures real understanding.",
-			icon: <Brain className="w-6 h-6" />,
-		},
-		{
-			number: "04",
-			title: "Land Your Dream Job",
-			description: "Apply with confidence knowing you&apos;ve mastered the patterns that matter.",
-			icon: <Award className="w-6 h-6" />,
-		},
-	];
-
 	const HeroSection = () => {
 		return (
 			<div>
@@ -311,65 +198,67 @@ const InterviewGuruLanding = () => {
 		);
 	};
 
-	const HowItWorksSection = () => {
+	const HowItWorksSection = ({ className }: { className?: string }) => {
+		const steps = [
+			{
+				icon: Target,
+				title: "Set your target",
+				body: "Choose your level, timeline, and companies. We align your prep to what actually gets asked.",
+			},
+			{
+				icon: ListChecks,
+				title: "Get your pathway",
+				body: "A personalized sequence across topics → prerequisites → company patterns. High-ROI only.",
+			},
+			{
+				icon: Lightbulb,
+				title: "Practice with guidance",
+				body: "Tutor-style hints and error analysis help you progress without giving away the solution.",
+			},
+			{
+				icon: Rocket,
+				title: "Lock it in",
+				body: "Close gaps, rehearse company-specific patterns, and run a final mock before the real loop.",
+			},
+		];
+
 		return (
-			<div>
-				{/* Features */}
-				<section id="features" className="py-20 px-6">
-					<div className="container mx-auto">
-						<div className="text-center mb-16">
-							<h2 className="text-4xl md:text-5xl font-bold mb-6">Why InterviewGuru Works</h2>
-							<p className="text-xl text-gray-600 max-w-2xl mx-auto">
-								Unlike generic practice platforms, we use AI to create a truly personalized experience that adapts to
-								how you learn and what you need to succeed.
-							</p>
-						</div>
-
-						<div className="grid md:grid-cols-2 gap-8">
-							{features.map((feature, index) => (
-								<Card key={index} className="hover:shadow-lg transition-shadow">
-									<CardHeader>
-										<div className="flex items-center space-x-4">
-											{feature.icon}
-											<CardTitle>{feature.title}</CardTitle>
-										</div>
-									</CardHeader>
-									<CardContent>
-										<CardDescription className="text-base">{feature.description}</CardDescription>
-									</CardContent>
-								</Card>
-							))}
-						</div>
+			<section className={cn("w-full py-16 md:py-24", className)}>
+				<div className="mx-auto w-full max-w-6xl px-6">
+					<div className="mb-10 flex items-center gap-2 text-sm text-muted-foreground">
+						<CheckCircle2 className="h-4 w-4" />
+						<span>Built by ex-interviewers. Designed for outcomes.</span>
 					</div>
-				</section>
 
-				{/* How It Works */}
-				<section id="how-it-works" className="py-20 px-6 bg-gray-50">
-					<div className="container mx-auto">
-						<div className="text-center mb-16">
-							<h2 className="text-4xl md:text-5xl font-bold mb-6">How It Works</h2>
-							<p className="text-xl text-gray-600 max-w-2xl mx-auto">
-								Get started in minutes and land your dream job in weeks, not months.
-							</p>
-						</div>
+					<h2 className="text-3xl font-semibold tracking-tight md:text-4xl">How it works</h2>
+					<p className="mt-2 max-w-2xl text-muted-foreground">
+						A focused path that cuts noise and gets you ready for the actual interview loop.
+					</p>
 
-						<div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
-							{steps.map((step, index) => (
-								<div key={index} className="text-center">
-									<div className="bg-black text-white w-16 h-16 rounded-full flex items-center justify-center text-2xl font-bold mx-auto mb-4">
-										{step.number}
+					<div className="mt-10 grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-4">
+						{steps.map(({ icon: Icon, title, body }, i) => (
+							<Card key={i} className="border-muted/50">
+								<CardContent className="p-5">
+									<div className="mb-3 inline-flex h-10 w-10 items-center justify-center rounded-xl border bg-card">
+										<Icon className="h-5 w-5" aria-hidden="true" />
 									</div>
-									<div className="bg-gray-200 p-2 rounded-full w-12 h-12 flex items-center justify-center mx-auto mb-4">
-										{step.icon}
-									</div>
-									<h3 className="text-xl font-semibold mb-2">{step.title}</h3>
-									<p className="text-gray-600">{step.description}</p>
-								</div>
-							))}
-						</div>
+									<h3 className="text-lg font-medium">{title}</h3>
+									<p className="mt-1 text-sm text-muted-foreground leading-relaxed">{body}</p>
+								</CardContent>
+							</Card>
+						))}
 					</div>
-				</section>
-			</div>
+
+					<div className="mt-10">
+						<Button size="lg" className="px-6">
+							Start your plan in 60 seconds
+						</Button>
+						<p className="mt-3 text-xs text-muted-foreground">
+							No fluff. Just the highest‑signal path for your targets.
+						</p>
+					</div>
+				</div>
+			</section>
 		);
 	};
 
@@ -544,7 +433,7 @@ const InterviewGuruLanding = () => {
 			<HeroSection />
 			<InterviewWithTheseCompaniesSection />
 			<AboutUsSection />
-			{/* <HowItWorksSection /> */}
+			<HowItWorksSection />
 			{/* <UsVsThemSection /> */}
 			{/* <SocialProof /> */}
 			<PricingSection />
