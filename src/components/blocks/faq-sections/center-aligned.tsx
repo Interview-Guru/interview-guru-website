@@ -5,37 +5,37 @@ const faqs = [
 	{
 		question: "Who is InterviewGuru for?",
 		answer:
-			"InterviewGuru is built for engineers preparing for technical coding interviews, especially those with a focus on algorithms, system design, and company-specific preparation. Whether you're a junior developer aiming for your first role, or a senior engineer targeting top-tier offers, our guided pathways and curated problem sets will help you practice efficiently and progress with confidence.",
+			"InterviewGuru is built for engineers preparing for technical coding interviews, especially those focused on data structures, algorithms, and company-specific challenges. Whether you're a junior developer looking to break into the industry or a mid-to-senior engineer aiming to land a top-tier offer, our guided pathways help you progress with clarity and confidence.",
 	},
 	{
 		question: "What makes InterviewGuru different from other platforms?",
 		answer:
-			"InterviewGuru goes beyond question dumps by providing a structured learning pathway, clear question prioritization, company-specific prep, and a supportive prep experience. Every question is part of a larger progression system, designed to help you move from beginner to expert with minimal guesswork. We also simulate real interviews and support you with detailed feedback along the way.",
+			"InterviewGuru offers a personalized prep experience rather than just a list of problems. Our smart pathway adapts to your progress, prioritizes high-impact questions, and provides a focused, distraction-free environment to improve consistently. Unlike other platforms, we cut the fluff and give you exactly what you need to succeed.",
 	},
 	{
 		question: "Is InterviewGuru worth it?",
 		answer:
-			"Yes. The cost of InterviewGuru is a fraction of what even a single improved offer could bring you in salary. Excelling in interviews can lead to higher levels, larger signing bonuses, and more total compensation. Our users have landed offers at top companies, and many report seeing questions in their interviews that were directly practiced on the platform.",
+			"Just do the math. The cost of InterviewGuru is less than an hours of an engineer's time, yet the potential return is massive—better interview performance, stronger offers, and higher compensation. Many users have reported seeing questions in their real interviews that were directly practiced on our platform.",
 	},
 	{
 		question: "What do I get with InterviewGuru?",
 		answer:
-			"You get access to 500+ coding questions with detailed explanations, a smart pathway that adapts to your progress, company-specific prep guides, system design materials, and a growing knowledge base covering behavioral and strategy prep. Our roadmap helps you focus only on high-impact content instead of getting overwhelmed.",
+			"You get access to carefully selected coding questions, personalized progress tracking, company-specific questions, and curated prep pathways. On top of that, you get the most optimal pathway to prepare for interviews, guided by an AI assistant that knows exactly what you should be doing. Instead of giving you the solution outright, it helps you arrive at it yourself—ensuring you fully understand the reasoning behind each step and build true mastery through doing.",
 	},
 	{
-		question: "What’s included in the premium plan?",
+		question: "What's included in the premium plan?",
 		answer:
-			"Premium unlocks all questions, official solutions, company-specific filters, detailed roadmaps, advanced system design modules, and more. It also gives you access to future updates, exclusive question sets, and deep dives written by engineers who've worked at top-tier companies.",
+			"The premium plan unlocks our full question bank, company filters, and—most importantly—access to our AI interview coach. The AI guides you through each question with personalized support, helping you deeply understand the concepts without revealing the solution. Premium members also get access to our private community and mentors for additional guidance, support, and accountability. All future content updates are included at no extra cost.",
 	},
 	{
 		question: "Do I get future updates?",
 		answer:
-			"Yes. As a premium user, you'll receive all future updates for free. This includes new questions, updated solutions, and any new guides we publish to reflect evolving interview trends and technologies.",
+			"Yes. All premium members receive lifetime access to new questions, updated solutions, and any new prep tools we add to stay aligned with evolving interview trends.",
 	},
 	{
 		question: "Is InterviewGuru suitable for all experience levels?",
 		answer:
-			"Absolutely. Beginners can build a strong foundation, mid-level engineers can refine problem-solving and system thinking, and senior engineers can deepen their design and architecture skills. We also support students with discounted plans and tailored study tracks.",
+			"Yes. InterviewGuru is designed for all levels. Beginners can build strong fundamentals, mid-level engineers can fill in skill gaps and improve speed, and experienced engineers can sharpen their edge with targeted practice on the most commonly asked interview problems.",
 	},
 ];
 
