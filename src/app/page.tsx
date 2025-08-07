@@ -172,15 +172,9 @@ const InterviewGuruLanding = () => {
 
 	const AboutUsSection = () => {
 		return (
-			<div className="max-w-4xl mx-auto px-6">
+			<div className="max-w-4xl mx-auto px-6 cursor-default">
 				{/* Main heading */}
-				<Badge
-					onClick={() => {
-						window.location.href = "https://app.interviewguru.io/sign-up";
-					}}
-					variant="outline"
-					className="flex items-center gap-4 font-light p-2 rounded-full py-1 m-auto cursor-pointer mb-5"
-				>
+				<Badge variant="outline" className="flex items-center gap-4 font-light p-2 rounded-full py-1 m-auto mb-5">
 					<span className="flex md:text-lg gap-2 items-center">
 						Built by ex-interviews at <BsAmazon />
 					</span>
@@ -191,7 +185,7 @@ const InterviewGuruLanding = () => {
 				</Badge>
 				<div className="text-center mb-12">
 					<h2 className="text-2xl md:text-4xl font-bold text-foreground max-w-2xl m-auto">
-						We built InterviewGuru because it&apos;s what we wish existed
+						We built InterviewGuru Because It&apos;s What We Wish Existed
 					</h2>
 				</div>
 
@@ -238,8 +232,8 @@ const InterviewGuruLanding = () => {
 										Shane Perera
 										<BsLinkedin />
 									</Link>
-									<div className="text-xs text-muted-foreground font-semibold">Co-founder, InterviewGuru</div>
-									<div className="flex items-center gap-1 text-xs text-muted-foreground font-semibold">
+									<div className="text-xs text-muted-foreground">Co-founder, InterviewGuru</div>
+									<div className="flex items-center gap-1 text-xs text-muted-foreground">
 										Amazon Alumini
 										<BsAmazon />
 									</div>
@@ -262,8 +256,8 @@ const InterviewGuruLanding = () => {
 										Luka Zoric
 										<BsLinkedin />
 									</Link>
-									<div className="text-xs text-muted-foreground font-semibold">Co-founder, InterviewGuru</div>
-									<div className="flex items-center gap-1 text-xs text-muted-foreground font-semibold">
+									<div className="text-xs text-muted-foreground">Co-founder, InterviewGuru</div>
+									<div className="flex items-center gap-1 text-xs text-muted-foreground">
 										Amazon Alumini
 										<BsAmazon />
 									</div>
@@ -294,14 +288,14 @@ const InterviewGuruLanding = () => {
 
 	const InterviewWithTheseCompaniesSection = () => {
 		return (
-			<div className="min-h-5xl pb-30">
+			<div className="min-h-5xl pb-30 cursor-default">
 				<ScrollableImageComponent />
 			</div>
 		);
 	};
 
 	return (
-		<div className="min-h-screen">
+		<div className="min-h-screen cursor-default">
 			<HeaderSection />
 			<HeroSection />
 			<InterviewWithTheseCompaniesSection />
