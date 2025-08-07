@@ -1,7 +1,7 @@
 "use client";
 
 import React from "react";
-import { Star, Target, Zap, Brain, Award, Check, ArrowRight, Code, Building, Handshake } from "lucide-react";
+import { Star, Target, Zap, Brain, Award, Check, Lock, Code, Building, Handshake } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
@@ -276,7 +276,7 @@ const InterviewGuruLanding = () => {
 
 	const CTASection = () => {
 		return (
-			<section className="px-6 flex flex-col gap-5 py-20">
+			<section className="min-h-[calc(100svh-52px)] md:min-h-[30vh] px-6 flex flex-col gap-5 justify-around">
 				<div className="max-w-6xl mx-auto flex flex-col gap-5">
 					<Badge variant="outline" className="flex items-center gap-4 font-light p-3 rounded-full py-1 m-auto">
 						<span className="flex md:text-lg gap-2 items-center">Average prep time ~8 weeks</span>
@@ -380,98 +380,149 @@ const InterviewGuruLanding = () => {
 
 	const PricingSection = () => {
 		return (
-			<div>
-				<section id="pricing" className="py-20 px-6">
-					<div className="container mx-auto">
-						<div className="text-center mb-16">
-							<h2 className="text-4xl md:text-5xl font-bold mb-6">Simple, Transparent Pricing</h2>
-							<p className="text-xl text-gray-600 max-w-2xl mx-auto">
-								No freemium distractions. Get full access to everything you need to land your dream job.
-							</p>
-						</div>
+			<section className="min-h-[calc(100svh-52px)] flex flex-col justify-around py-20">
+				<div className="mx-auto px-6">
+					<div className="text-center mb-16">
+						<Badge variant="outline" className="flex items-center gap-4 font-light p-3 rounded-full py-1 m-auto mb-5">
+							<span className="flex md:text-lg gap-2 items-center">Simple and Transparent Pricing</span>
+							{/* <span className="flex items-centers gap-1 font-semibold md:text-lg">
+						Try it here
+						<ArrowRight className="w-3.5 h-4 md:h-7 md:w-4" />
+					</span> */}
+						</Badge>
+						<h2 className="text-2xl md:text-4xl font-bold text-foreground max-w-2xl m-auto mb-1.5">
+							Prepare smarter, interview better & secure high-paying roles
+						</h2>
+						<p className="text-muted-foreground text-lg">
+							Get full access to everything you need to land your dream job.
+						</p>
+					</div>
 
-						<div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
-							{/* Monthly */}
-							<Card>
-								<CardHeader className="text-center">
-									<CardTitle className="text-2xl">Monthly</CardTitle>
-									<CardDescription>Perfect for focused prep</CardDescription>
-									<div className="text-4xl font-bold mt-4">
-										$29.99
-										<span className="text-lg text-gray-500 font-normal">/month</span>
-									</div>
-								</CardHeader>
-								<CardContent className="space-y-4">
-									<div className="flex items-center space-x-3">
-										<Check className="w-5 h-5" />
-										<span>AI-powered personalized learning paths</span>
-									</div>
-									<div className="flex items-center space-x-3">
-										<Check className="w-5 h-5" />
-										<span>400+ company-specific preparation</span>
-									</div>
-									<div className="flex items-center space-x-3">
-										<Check className="w-5 h-5" />
-										<span>Personal AI mentor & guidance</span>
-									</div>
-									<div className="flex items-center space-x-3">
-										<Check className="w-5 h-5" />
-										<span>Progress tracking & analytics</span>
-									</div>
-									<div className="flex items-center space-x-3">
-										<Check className="w-5 h-5" />
-										<span>24/7 support</span>
-									</div>
-									<Button className="w-full mt-6">Start Now</Button>
-								</CardContent>
-							</Card>
-
-							{/* Quarterly */}
-							<Card className="border-black relative">
-								<div className="absolute -top-3 left-1/2 transform -translate-x-1/2">
-									<Badge>Most Popular</Badge>
+					<div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+						{/* Quarterly Plan - Best Deal */}
+						<div className="bg-card/30 border-1 border-primary rounded-2xl p-8 relative">
+							<div className="absolute -top-3 left-1/2 transform -translate-x-1/2">
+								<div className="bg-primary text-primary-foreground px-4 py-1 rounded-full text-sm font-semibold">
+									Best Deal
 								</div>
-								<CardHeader className="text-center">
-									<CardTitle className="text-2xl">Quarterly</CardTitle>
-									<CardDescription>Best value for serious prep</CardDescription>
-									<div className="text-4xl font-bold mt-4">
-										$69.99
-										<span className="text-lg text-gray-500 font-normal">/quarter</span>
-									</div>
-									<div className="text-sm text-gray-500">Save $20 vs monthly</div>
-								</CardHeader>
-								<CardContent className="space-y-4">
-									<div className="flex items-center space-x-3">
-										<Check className="w-5 h-5" />
-										<span>Everything in Monthly</span>
-									</div>
-									<div className="flex items-center space-x-3">
-										<Check className="w-5 h-5" />
-										<span>Extended timeline optimization</span>
-									</div>
-									<div className="flex items-center space-x-3">
-										<Check className="w-5 h-5" />
-										<span>Advanced progress analytics</span>
-									</div>
-									<div className="flex items-center space-x-3">
-										<Check className="w-5 h-5" />
-										<span>Priority support</span>
-									</div>
-									<div className="flex items-center space-x-3">
-										<Check className="w-5 h-5" />
-										<span>Early access to new features</span>
-									</div>
-									<Button className="w-full mt-6">Start Now</Button>
-								</CardContent>
-							</Card>
-						</div>
+							</div>
 
-						<div className="text-center mt-8">
-							<p className="text-gray-600">30-day money-back guarantee. Cancel anytime.</p>
+							<div className="flex items-center gap-3 mb-8">
+								<div className="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center">
+									<div className="w-6 h-6 bg-primary rounded-full"></div>
+								</div>
+								<div>
+									<h3 className="text-2xl font-bold text-card-foreground">IG Pro Plan</h3>
+									<p className="text-muted-foreground flex gap-2 items-center">
+										Billed quarterly{" "}
+										<Badge variant="outline" className="text-white outline-green-400 outline-1 rounded-sm bg-green-900">
+											45% OFF
+										</Badge>
+									</p>
+								</div>
+							</div>
+
+							<div className="text-4xl font-bold text-card-foreground mb-1">
+								$24.99<span className="text-sm font-normal"> / month</span>
+							</div>
+							<Button className="w-full py-3 px-6 rounded-xl font-semibold mb-6 mt-8 transition-colors">
+								Subscribe
+							</Button>
+
+							<div className="flex items-center gap-2 text-sm text-muted-foreground mb-6">
+								<Lock className="w-4 h-4" />
+								<span>Secure checkout</span>
+							</div>
+
+							<div className="space-y-3">
+								<div className="flex items-center gap-3">
+									<Check className="w-5 h-5 text-green-500 flex-shrink-0" />
+									<span className="text-card-foreground">Unlimited access to all content</span>
+								</div>
+								<div className="flex items-center gap-3">
+									<Check className="w-5 h-5 text-green-500 flex-shrink-0" />
+									<span className="text-card-foreground">Personalised learning path</span>
+								</div>
+								<div className="flex items-center gap-3">
+									<Check className="w-5 h-5 text-green-500 flex-shrink-0" />
+									<span className="text-card-foreground">Progress tracking and analytics</span>
+								</div>
+								<div className="flex items-center gap-3">
+									<Check className="w-5 h-5 text-green-500 flex-shrink-0" />
+									<span className="text-card-foreground">Supportive community & coaching</span>
+								</div>
+								<div className="flex items-center gap-3">
+									<Check className="w-5 h-5 text-green-500 flex-shrink-0" />
+									<span className="text-card-foreground">AI-guided problem solving</span>
+								</div>
+								<div className="flex items-center gap-3">
+									<Check className="w-5 h-5 text-green-500 flex-shrink-0" />
+									<span className="text-card-foreground">24/7 customer support</span>
+								</div>
+							</div>
+						</div>
+						{/* Monthly Plan */}
+						<div className="bg-background border border-border rounded-2xl p-8 relative">
+							<div className="flex items-center gap-3 mb-4">
+								<div className="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center">
+									<div className="w-6 h-6 bg-primary rounded-full"></div>
+								</div>
+								<div>
+									<h3 className="text-2xl font-bold text-card-foreground">IG Pro</h3>
+									<p className="text-muted-foreground">Billed monthly</p>
+								</div>
+							</div>
+
+							<div className="text-4xl font-bold text-card-foreground mb-1">
+								$44.99<span className="text-sm font-normal"> / month</span>
+							</div>
+
+							<Button
+								variant="secondary"
+								className="w-full py-3 px-6 rounded-xl font-semibold mb-6 mt-8 transition-colors"
+							>
+								Subscribe
+							</Button>
+
+							<div className="flex items-center gap-2 text-sm text-muted-foreground mb-6">
+								<Lock className="w-4 h-4" />
+								<span>Secure checkout</span>
+							</div>
+
+							<div className="space-y-3">
+								<div className="flex items-center gap-3">
+									<Check className="w-5 h-5 text-green-500 flex-shrink-0" />
+									<span className="text-card-foreground">Unlimited access to all content</span>
+								</div>
+								<div className="flex items-center gap-3">
+									<Check className="w-5 h-5 text-green-500 flex-shrink-0" />
+									<span className="text-card-foreground">Personalised learning path</span>
+								</div>
+								<div className="flex items-center gap-3">
+									<Check className="w-5 h-5 text-green-500 flex-shrink-0" />
+									<span className="text-card-foreground">Progress tracking and analytics</span>
+								</div>
+								<div className="flex items-center gap-3">
+									<Check className="w-5 h-5 text-green-500 flex-shrink-0" />
+									<span className="text-card-foreground">Supportive community & coaching</span>
+								</div>
+								<div className="flex items-center gap-3">
+									<Check className="w-5 h-5 text-green-500 flex-shrink-0" />
+									<span className="text-card-foreground">AI-guided problem solving</span>
+								</div>
+								<div className="flex items-center gap-3">
+									<Check className="w-5 h-5 text-green-500 flex-shrink-0" />
+									<span className="text-card-foreground">24/7 customer support</span>
+								</div>
+							</div>
 						</div>
 					</div>
-				</section>
-			</div>
+
+					<div className="text-center mt-12">
+						<p className="text-muted-foreground">Trusted by thousands of job seekers worldwide. Cancel anytime.</p>
+					</div>
+				</div>
+			</section>
 		);
 	};
 
