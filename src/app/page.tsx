@@ -1,7 +1,7 @@
 "use client";
 
 import React from "react";
-import { Star, Target, Zap, Brain, Award, Check, ArrowRight, Code, Building } from "lucide-react";
+import { Star, Target, Zap, Brain, Award, Check, ArrowRight, Code, Building, Handshake } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
@@ -170,6 +170,10 @@ const InterviewGuruLanding = () => {
 		);
 	};
 
+	const FAQSection = () => {
+		return <div>FAQ section</div>;
+	};
+
 	const AboutUsSection = () => {
 		return (
 			<div className="max-w-4xl mx-auto px-6 cursor-default">
@@ -272,14 +276,28 @@ const InterviewGuruLanding = () => {
 
 	const CTASection = () => {
 		return (
-			<section className="py-20 px-6">
-				<div className="container mx-auto text-center">
-					<h2 className="text-4xl md:text-5xl font-bold mb-6">You Don&apos;t Have To Risk Getting Caugh Cheating.?</h2>
-					<p className="text-xl text-gray-600 mb-8 max-w-2xl mx-auto">
-						Just learn what you need to, understand it and apply. Join IG today.
+			<section className="px-6 flex flex-col gap-5 py-20">
+				<div className="max-w-6xl mx-auto flex flex-col gap-5">
+					<Badge variant="outline" className="flex items-center gap-4 font-light p-3 rounded-full py-1 m-auto">
+						<span className="flex md:text-lg gap-2 items-center">Average prep time ~8 weeks</span>
+						{/* <span className="flex items-centers gap-1 font-semibold md:text-lg">
+						Try it here
+						<ArrowRight className="w-3.5 h-4 md:h-7 md:w-4" />
+					</span> */}
+					</Badge>
+					<h2 className="max-w-3xl text-4xl md:text-5xl font-bold text-center cursor-default mx-auto">
+						Your Perfect Job Is One Preparation Away
+					</h2>
+					<p className="text-muted-foreground font-light cursor-default text-center max-w-lg m-auto md:text-lg">
+						Join thousands who went from interview anxiety to job offers in as early as 8 weeks.
 					</p>
-					<Button size="lg">
-						Start Now <ArrowRight className="ml-2 w-5 h-5" />
+					<Button
+						onClick={() => {
+							window.location.href = "https://app.interviewguru.io/sign-up";
+						}}
+						className="w-full md:w-[220px] m-auto md:text-lg md:p-6"
+					>
+						Get Started Now
 					</Button>
 				</div>
 			</section>
@@ -294,269 +312,187 @@ const InterviewGuruLanding = () => {
 		);
 	};
 
+	const HowItWorksSection = () => {
+		return (
+			<div>
+				{/* Features */}
+				<section id="features" className="py-20 px-6">
+					<div className="container mx-auto">
+						<div className="text-center mb-16">
+							<h2 className="text-4xl md:text-5xl font-bold mb-6">Why InterviewGuru Works</h2>
+							<p className="text-xl text-gray-600 max-w-2xl mx-auto">
+								Unlike generic practice platforms, we use AI to create a truly personalized experience that adapts to
+								how you learn and what you need to succeed.
+							</p>
+						</div>
+
+						<div className="grid md:grid-cols-2 gap-8">
+							{features.map((feature, index) => (
+								<Card key={index} className="hover:shadow-lg transition-shadow">
+									<CardHeader>
+										<div className="flex items-center space-x-4">
+											{feature.icon}
+											<CardTitle>{feature.title}</CardTitle>
+										</div>
+									</CardHeader>
+									<CardContent>
+										<CardDescription className="text-base">{feature.description}</CardDescription>
+									</CardContent>
+								</Card>
+							))}
+						</div>
+					</div>
+				</section>
+
+				{/* How It Works */}
+				<section id="how-it-works" className="py-20 px-6 bg-gray-50">
+					<div className="container mx-auto">
+						<div className="text-center mb-16">
+							<h2 className="text-4xl md:text-5xl font-bold mb-6">How It Works</h2>
+							<p className="text-xl text-gray-600 max-w-2xl mx-auto">
+								Get started in minutes and land your dream job in weeks, not months.
+							</p>
+						</div>
+
+						<div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+							{steps.map((step, index) => (
+								<div key={index} className="text-center">
+									<div className="bg-black text-white w-16 h-16 rounded-full flex items-center justify-center text-2xl font-bold mx-auto mb-4">
+										{step.number}
+									</div>
+									<div className="bg-gray-200 p-2 rounded-full w-12 h-12 flex items-center justify-center mx-auto mb-4">
+										{step.icon}
+									</div>
+									<h3 className="text-xl font-semibold mb-2">{step.title}</h3>
+									<p className="text-gray-600">{step.description}</p>
+								</div>
+							))}
+						</div>
+					</div>
+				</section>
+			</div>
+		);
+	};
+
+	const UsVsThemSection = () => {
+		return <div>Us vs them section</div>;
+	};
+
+	const PricingSection = () => {
+		return (
+			<div>
+				<section id="pricing" className="py-20 px-6 bg-gray-50">
+					<div className="container mx-auto">
+						<div className="text-center mb-16">
+							<h2 className="text-4xl md:text-5xl font-bold mb-6">Simple, Transparent Pricing</h2>
+							<p className="text-xl text-gray-600 max-w-2xl mx-auto">
+								No freemium distractions. Get full access to everything you need to land your dream job.
+							</p>
+						</div>
+
+						<div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+							{/* Monthly */}
+							<Card>
+								<CardHeader className="text-center">
+									<CardTitle className="text-2xl">Monthly</CardTitle>
+									<CardDescription>Perfect for focused prep</CardDescription>
+									<div className="text-4xl font-bold mt-4">
+										$29.99
+										<span className="text-lg text-gray-500 font-normal">/month</span>
+									</div>
+								</CardHeader>
+								<CardContent className="space-y-4">
+									<div className="flex items-center space-x-3">
+										<Check className="w-5 h-5" />
+										<span>AI-powered personalized learning paths</span>
+									</div>
+									<div className="flex items-center space-x-3">
+										<Check className="w-5 h-5" />
+										<span>400+ company-specific preparation</span>
+									</div>
+									<div className="flex items-center space-x-3">
+										<Check className="w-5 h-5" />
+										<span>Personal AI mentor & guidance</span>
+									</div>
+									<div className="flex items-center space-x-3">
+										<Check className="w-5 h-5" />
+										<span>Progress tracking & analytics</span>
+									</div>
+									<div className="flex items-center space-x-3">
+										<Check className="w-5 h-5" />
+										<span>24/7 support</span>
+									</div>
+									<Button className="w-full mt-6">Start Now</Button>
+								</CardContent>
+							</Card>
+
+							{/* Quarterly */}
+							<Card className="border-black relative">
+								<div className="absolute -top-3 left-1/2 transform -translate-x-1/2">
+									<Badge>Most Popular</Badge>
+								</div>
+								<CardHeader className="text-center">
+									<CardTitle className="text-2xl">Quarterly</CardTitle>
+									<CardDescription>Best value for serious prep</CardDescription>
+									<div className="text-4xl font-bold mt-4">
+										$69.99
+										<span className="text-lg text-gray-500 font-normal">/quarter</span>
+									</div>
+									<div className="text-sm text-gray-500">Save $20 vs monthly</div>
+								</CardHeader>
+								<CardContent className="space-y-4">
+									<div className="flex items-center space-x-3">
+										<Check className="w-5 h-5" />
+										<span>Everything in Monthly</span>
+									</div>
+									<div className="flex items-center space-x-3">
+										<Check className="w-5 h-5" />
+										<span>Extended timeline optimization</span>
+									</div>
+									<div className="flex items-center space-x-3">
+										<Check className="w-5 h-5" />
+										<span>Advanced progress analytics</span>
+									</div>
+									<div className="flex items-center space-x-3">
+										<Check className="w-5 h-5" />
+										<span>Priority support</span>
+									</div>
+									<div className="flex items-center space-x-3">
+										<Check className="w-5 h-5" />
+										<span>Early access to new features</span>
+									</div>
+									<Button className="w-full mt-6">Start Now</Button>
+								</CardContent>
+							</Card>
+						</div>
+
+						<div className="text-center mt-8">
+							<p className="text-gray-600">30-day money-back guarantee. Cancel anytime.</p>
+						</div>
+					</div>
+				</section>
+			</div>
+		);
+	};
+
+	const SocialProof = () => {
+		return <div>Social proof section</div>;
+	};
+
 	return (
 		<div className="min-h-screen cursor-default">
 			<HeaderSection />
 			<HeroSection />
 			<InterviewWithTheseCompaniesSection />
 			<AboutUsSection />
+			<HowItWorksSection />
+			<UsVsThemSection />
+			<SocialProof />
+			<PricingSection />
+			<FAQSection />
+			<CTASection />
 			<FooterSection />
-
-			<div className="w-full h-[200px] bg-white"></div>
-			{/* Hero Section */}
-			<section className="pt-32 pb-20 px-6 bg-white">
-				<div className="grid grid-cols-2 md:grid-cols-4 gap-8 max-w-2xl mx-auto">
-					<div>
-						<div className="text-3xl font-bold">400+</div>
-						<div className="text-gray-600">Companies</div>
-					</div>
-					<div>
-						<div className="text-3xl font-bold">95%</div>
-						<div className="text-gray-600">Success Rate</div>
-					</div>
-					<div>
-						<div className="text-3xl font-bold">8 weeks</div>
-						<div className="text-gray-600">Avg. Prep Time</div>
-					</div>
-					<div>
-						<div className="text-3xl font-bold">$250k+</div>
-						<div className="text-gray-600">Avg. Salary</div>
-					</div>
-				</div>
-			</section>
-
-			{/* Companies */}
-			<section className="py-16 px-6 bg-gray-50 border-y">
-				<div className="container mx-auto">
-					<h2 className="text-center text-gray-600 text-lg mb-8">Prepare for interviews at</h2>
-					<div className="flex flex-wrap justify-center items-center gap-8 text-gray-500">
-						{companies.map((company, index) => (
-							<div key={index} className="font-semibold text-lg">
-								{company}
-							</div>
-						))}
-					</div>
-				</div>
-			</section>
-
-			{/* Features */}
-			<section id="features" className="py-20 px-6">
-				<div className="container mx-auto">
-					<div className="text-center mb-16">
-						<h2 className="text-4xl md:text-5xl font-bold mb-6">Why InterviewGuru Works</h2>
-						<p className="text-xl text-gray-600 max-w-2xl mx-auto">
-							Unlike generic practice platforms, we use AI to create a truly personalized experience that adapts to how
-							you learn and what you need to succeed.
-						</p>
-					</div>
-
-					<div className="grid md:grid-cols-2 gap-8">
-						{features.map((feature, index) => (
-							<Card key={index} className="hover:shadow-lg transition-shadow">
-								<CardHeader>
-									<div className="flex items-center space-x-4">
-										{feature.icon}
-										<CardTitle>{feature.title}</CardTitle>
-									</div>
-								</CardHeader>
-								<CardContent>
-									<CardDescription className="text-base">{feature.description}</CardDescription>
-								</CardContent>
-							</Card>
-						))}
-					</div>
-				</div>
-			</section>
-
-			<div>US VS THEM</div>
-			{/* How It Works */}
-			<section id="how-it-works" className="py-20 px-6 bg-gray-50">
-				<div className="container mx-auto">
-					<div className="text-center mb-16">
-						<h2 className="text-4xl md:text-5xl font-bold mb-6">How It Works</h2>
-						<p className="text-xl text-gray-600 max-w-2xl mx-auto">
-							Get started in minutes and land your dream job in weeks, not months.
-						</p>
-					</div>
-
-					<div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
-						{steps.map((step, index) => (
-							<div key={index} className="text-center">
-								<div className="bg-black text-white w-16 h-16 rounded-full flex items-center justify-center text-2xl font-bold mx-auto mb-4">
-									{step.number}
-								</div>
-								<div className="bg-gray-200 p-2 rounded-full w-12 h-12 flex items-center justify-center mx-auto mb-4">
-									{step.icon}
-								</div>
-								<h3 className="text-xl font-semibold mb-2">{step.title}</h3>
-								<p className="text-gray-600">{step.description}</p>
-							</div>
-						))}
-					</div>
-				</div>
-			</section>
-
-			{/* Testimonials */}
-			<section id="testimonials" className="py-20 px-6">
-				<div className="container mx-auto">
-					<div className="text-center mb-16">
-						<h2 className="text-4xl md:text-5xl font-bold mb-6">Success Stories</h2>
-						<p className="text-xl text-gray-600 max-w-2xl mx-auto">
-							Real engineers who landed their dream jobs using InterviewGuru.
-						</p>
-					</div>
-
-					<div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-						{testimonials.slice(0, 3).map((testimonial, index) => (
-							<Card key={index}>
-								<CardHeader>
-									<div className="flex items-center space-x-4">
-										<Avatar>
-											<AvatarFallback className="bg-black text-white font-semibold">
-												{testimonial.avatar}
-											</AvatarFallback>
-										</Avatar>
-										<div>
-											<CardTitle className="text-lg">{testimonial.name}</CardTitle>
-											<CardDescription>{testimonial.role}</CardDescription>
-										</div>
-									</div>
-									<div className="flex space-x-1">
-										{[...Array(testimonial.rating)].map((_, i) => (
-											<Star key={i} className="w-4 h-4 fill-black text-black" />
-										))}
-									</div>
-								</CardHeader>
-								<CardContent>
-									<p>&quot;{testimonial.content}&quot;</p>
-								</CardContent>
-							</Card>
-						))}
-					</div>
-
-					<div className="grid md:grid-cols-2 gap-6 mt-6 max-w-4xl mx-auto">
-						{testimonials.slice(3, 5).map((testimonial, index) => (
-							<Card key={index + 3}>
-								<CardHeader>
-									<div className="flex items-center space-x-4">
-										<Avatar>
-											<AvatarFallback className="bg-black text-white font-semibold">
-												{testimonial.avatar}
-											</AvatarFallback>
-										</Avatar>
-										<div>
-											<CardTitle className="text-lg">{testimonial.name}</CardTitle>
-											<CardDescription>{testimonial.role}</CardDescription>
-										</div>
-									</div>
-									<div className="flex space-x-1">
-										{[...Array(testimonial.rating)].map((_, i) => (
-											<Star key={i} className="w-4 h-4 fill-black text-black" />
-										))}
-									</div>
-								</CardHeader>
-								<CardContent>
-									<p>&quot;{testimonial.content}&quot;</p>
-								</CardContent>
-							</Card>
-						))}
-					</div>
-				</div>
-			</section>
-
 			{/* Pricing */}
-			<section id="pricing" className="py-20 px-6 bg-gray-50">
-				<div className="container mx-auto">
-					<div className="text-center mb-16">
-						<h2 className="text-4xl md:text-5xl font-bold mb-6">Simple, Transparent Pricing</h2>
-						<p className="text-xl text-gray-600 max-w-2xl mx-auto">
-							No freemium distractions. Get full access to everything you need to land your dream job.
-						</p>
-					</div>
-
-					<div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
-						{/* Monthly */}
-						<Card>
-							<CardHeader className="text-center">
-								<CardTitle className="text-2xl">Monthly</CardTitle>
-								<CardDescription>Perfect for focused prep</CardDescription>
-								<div className="text-4xl font-bold mt-4">
-									$29.99
-									<span className="text-lg text-gray-500 font-normal">/month</span>
-								</div>
-							</CardHeader>
-							<CardContent className="space-y-4">
-								<div className="flex items-center space-x-3">
-									<Check className="w-5 h-5" />
-									<span>AI-powered personalized learning paths</span>
-								</div>
-								<div className="flex items-center space-x-3">
-									<Check className="w-5 h-5" />
-									<span>400+ company-specific preparation</span>
-								</div>
-								<div className="flex items-center space-x-3">
-									<Check className="w-5 h-5" />
-									<span>Personal AI mentor & guidance</span>
-								</div>
-								<div className="flex items-center space-x-3">
-									<Check className="w-5 h-5" />
-									<span>Progress tracking & analytics</span>
-								</div>
-								<div className="flex items-center space-x-3">
-									<Check className="w-5 h-5" />
-									<span>24/7 support</span>
-								</div>
-								<Button className="w-full mt-6">Start Now</Button>
-							</CardContent>
-						</Card>
-
-						{/* Quarterly */}
-						<Card className="border-black relative">
-							<div className="absolute -top-3 left-1/2 transform -translate-x-1/2">
-								<Badge>Most Popular</Badge>
-							</div>
-							<CardHeader className="text-center">
-								<CardTitle className="text-2xl">Quarterly</CardTitle>
-								<CardDescription>Best value for serious prep</CardDescription>
-								<div className="text-4xl font-bold mt-4">
-									$69.99
-									<span className="text-lg text-gray-500 font-normal">/quarter</span>
-								</div>
-								<div className="text-sm text-gray-500">Save $20 vs monthly</div>
-							</CardHeader>
-							<CardContent className="space-y-4">
-								<div className="flex items-center space-x-3">
-									<Check className="w-5 h-5" />
-									<span>Everything in Monthly</span>
-								</div>
-								<div className="flex items-center space-x-3">
-									<Check className="w-5 h-5" />
-									<span>Extended timeline optimization</span>
-								</div>
-								<div className="flex items-center space-x-3">
-									<Check className="w-5 h-5" />
-									<span>Advanced progress analytics</span>
-								</div>
-								<div className="flex items-center space-x-3">
-									<Check className="w-5 h-5" />
-									<span>Priority support</span>
-								</div>
-								<div className="flex items-center space-x-3">
-									<Check className="w-5 h-5" />
-									<span>Early access to new features</span>
-								</div>
-								<Button className="w-full mt-6">Start Now</Button>
-							</CardContent>
-						</Card>
-					</div>
-
-					<div className="text-center mt-8">
-						<p className="text-gray-600">30-day money-back guarantee. Cancel anytime.</p>
-					</div>
-				</div>
-			</section>
-
-			<div>COMMON QUESTIONS</div>
 		</div>
 	);
 };
