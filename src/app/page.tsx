@@ -419,7 +419,12 @@ const InterviewGuruLanding = () => {
 							<div className="text-4xl font-bold text-card-foreground mb-1">
 								$24.99<span className="text-sm font-normal"> / month</span>
 							</div>
-							<Button className="w-full py-3 px-6 rounded-xl font-semibold mb-6 mt-8 transition-colors">
+							<Button
+								onClick={() => {
+									window.location.href = "https://app.interviewguru.io/sign-up";
+								}}
+								className="w-full py-3 px-6 rounded-xl font-semibold mb-6 mt-8 transition-colors"
+							>
 								Subscribe
 							</Button>
 
@@ -472,6 +477,9 @@ const InterviewGuruLanding = () => {
 							</div>
 
 							<Button
+								onClick={() => {
+									window.location.href = "https://app.interviewguru.io/sign-up";
+								}}
 								variant="secondary"
 								className="w-full py-3 px-6 rounded-xl font-semibold mb-6 mt-8 transition-colors"
 							>
