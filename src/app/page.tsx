@@ -456,7 +456,7 @@ const InterviewGuruLanding = () => {
 						</div>
 						{/* Monthly Plan */}
 						<div className="bg-background border border-border rounded-2xl p-8 relative">
-							<div className="flex items-center gap-3 mb-4">
+							<div className="flex items-center gap-3 mb-8">
 								<div className="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center">
 									<div className="w-6 h-6 bg-primary rounded-full"></div>
 								</div>
