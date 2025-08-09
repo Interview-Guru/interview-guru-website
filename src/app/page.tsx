@@ -167,7 +167,7 @@ const InterviewGuruLanding = () => {
 
 	const CTASection = () => {
 		return (
-			<section className="px-6 flex flex-col gap-5 py-30">
+			<section className="px-6 flex flex-col gap-5 py-20">
 				<div className="max-w-6xl mx-auto flex flex-col gap-5">
 					<h2 className="max-w-2xl text-4xl md:text-5xl font-bold text-center cursor-default mx-auto">
 						Your Dream Job Is Absolutely Worth It
@@ -206,7 +206,7 @@ const InterviewGuruLanding = () => {
 			{
 				icon: ListChecks,
 				title: "Get your pathway",
-				body: "We guide you through a personalised sequence: topics → prerequisites → company-specific questions. No decision fatigue, no wasted reps.",
+				body: "We guide you through a curated question sequence covering fundamentals and company-specific questions. No decision fatigue, no wasted reps.",
 			},
 			{
 				icon: Lightbulb,
@@ -216,12 +216,12 @@ const InterviewGuruLanding = () => {
 			{
 				icon: Rocket,
 				title: "Lock it in",
-				body: "Revisit weak spots, drill company-specific patterns, and run a final mock loop so you're ready when it counts.",
+				body: "Track your progress, revisit weak spots and drill company-specific patterns so you're ready when it counts!",
 			},
 		];
 
 		return (
-			<section className="px-6 flex flex-col gap-5 py-30 pb-20">
+			<section className="px-6 flex flex-col gap-5 py-30 pb-0">
 				<div className="max-w-6xl mx-auto flex flex-col gap-5">
 					<Badge variant="outline" className="flex items-center gap-4 font-light p-3 rounded-full py-1 m-auto">
 						<span className="flex md:text-lg gap-2 items-center">Most Optimal Interview Prep</span>
@@ -245,18 +245,16 @@ const InterviewGuruLanding = () => {
 						))}
 					</div>
 
-					<div className="mt-5 w-full">
+					{/* <div className="flex mt-5 w-full">
 						<Button
 							onClick={() => {
 								window.location.href = "https://app.interviewguru.io/sign-up";
 							}}
-							className="w-full md:w-[320px] m-auto md:text-lg md:p-6"
+							className="w-full md:w-[320px] md:m-auto md:text-lg md:p-6"
 						>
 							Start In Just 60 Seconds
 						</Button>
-
-						<p className="mt-3 text-xs text-muted-foreground"></p>
-					</div>
+					</div> */}
 				</div>
 			</section>
 		);
@@ -264,7 +262,7 @@ const InterviewGuruLanding = () => {
 
 	const PricingSection = () => {
 		return (
-			<section className="min-h-[calc(100svh-52px)] flex flex-col justify-around py-10 pt-30">
+			<section className="min-h-[calc(100svh-52px)] flex flex-col justify-around py-10">
 				<div className="mx-auto px-6">
 					<div className="text-center mb-16">
 						<Badge variant="outline" className="flex items-center gap-4 font-light p-3 rounded-full py-1 m-auto mb-5">
