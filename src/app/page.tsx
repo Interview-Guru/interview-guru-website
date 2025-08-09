@@ -17,6 +17,7 @@ import Image from "next/image";
 import CenterAlignedWithActiveBackgroundGray from "@/components/blocks/faq-sections/center-aligned";
 import { ListChecks, Lightbulb, Rocket } from "lucide-react";
 import { AspectRatio } from "@/components/ui/aspect-ratio";
+import { BeforeAndAfter } from "@/components/ui/before-and-after";
 
 const InterviewGuruLanding = () => {
 	const HeroSection = () => {
@@ -53,8 +54,8 @@ const InterviewGuruLanding = () => {
 						>
 							Start Now
 						</Button>
-						<div className="m-auto border border-input rounded-lg mt-10">
-							<Image alt="IG chat shot" src="/IG_chat_shot.png" width={1000} height={200} className="rounded-lg" />
+						<div className="hidden md:block mt-10 mb-40 m-auto h-auto w-full max-w-[1000px]">
+							<BeforeAndAfter leftImage="/IG_chat_shot.png" rightImage="/IG_pathway_shot.png" />
 						</div>
 					</section>
 				</div>
