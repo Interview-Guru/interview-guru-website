@@ -16,7 +16,7 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
 	metadataBase: new URL("https://www.interviewguru.io"),
 	title: {
-		default: "AI Powered Interview Prep That Actually Works",
+		default: "InterviewGuru | AI Powered Interview Prep That Actually Works",
 		template: "%s | InterviewGuru",
 	},
 	description: "Personalized, AI-guided interview preparation to help you land top offers.",
