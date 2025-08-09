@@ -79,9 +79,9 @@ export default function CenterAlignedWithActiveBackgroundGray() {
 					<Accordion type="single" collapsible className="w-full">
 						{faqs.map((faq, index) => (
 							<AccordionItem value={`item-${index}`} key={faq.question}>
-								<AccordionTrigger className="text-lg font-semibold text-left">{faq.question}</AccordionTrigger>
-								<AccordionContent className="text-muted-foreground text-base font-light">
-									<StyledMarkdown content={faq.answer} className="!text-muted-foreground" />
+								<AccordionTrigger className="text-left">{faq.question}</AccordionTrigger>
+								<AccordionContent className="!text-muted-foreground text-base font-light">
+									<StyledMarkdown content={faq.answer} className="!text-muted-foreground !text-sm" />
 								</AccordionContent>
 							</AccordionItem>
 						))}

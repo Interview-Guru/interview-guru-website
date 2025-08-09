@@ -22,39 +22,39 @@ const StyledMarkdown = ({ content, className = "" }: MarkdownProps) => {
 				components={{
 					// Headings
 					h1: ({ children, ...props }: StandardProps) => (
-						<h1 className="text-4xl font-bold text-foreground mb-6 mt-8 pb-2 border-b border-border" {...props}>
+						<h1 className="text-4xl mb-6 mt-8 pb-2 border-b border-border" {...props}>
 							{children}
 						</h1>
 					),
 					h2: ({ children, ...props }: StandardProps) => (
-						<h2 className="text-3xl font-semibold text-foreground mb-4 mt-8 pb-2 border-b border-border" {...props}>
+						<h2 className="text-3xl mb-4 mt-8 pb-2 border-b border-border" {...props}>
 							{children}
 						</h2>
 					),
 					h3: ({ children, ...props }: StandardProps) => (
-						<h3 className="text-2xl font-semibold text-foreground mb-3 mt-6" {...props}>
+						<h3 className="text-2xl mb-3 mt-6" {...props}>
 							{children}
 						</h3>
 					),
 					h4: ({ children, ...props }: StandardProps) => (
-						<h4 className="text-xl font-medium text-foreground mb-3 mt-4" {...props}>
+						<h4 className="text-xl mb-3 mt-4" {...props}>
 							{children}
 						</h4>
 					),
 					h5: ({ children, ...props }: StandardProps) => (
-						<h5 className="text-lg font-medium text-foreground mb-2 mt-4" {...props}>
+						<h5 className="text-lg mb-2 mt-4" {...props}>
 							{children}
 						</h5>
 					),
 					h6: ({ children, ...props }: StandardProps) => (
-						<h6 className="text-base font-medium text-muted-foreground mb-2 mt-4" {...props}>
+						<h6 className="text-base mb-2 mt-4" {...props}>
 							{children}
 						</h6>
 					),
 
 					// Paragraphs
 					p: ({ children, ...props }: StandardProps) => (
-						<p className="text-foreground leading-7 mb-4" {...props}>
+						<p className="leading-7 mb-4" {...props}>
 							{children}
 						</p>
 					),
@@ -62,7 +62,7 @@ const StyledMarkdown = ({ content, className = "" }: MarkdownProps) => {
 					// Links
 					a: ({ children, href, ...props }: LinkProps) => (
 						<a
-							className="text-primary hover:text-primary/80 underline underline-offset-4 transition-colors"
+							className="underline underline-offset-4 transition-colors"
 							href={href}
 							target="_blank"
 							rel="noopener noreferrer"
@@ -119,10 +119,7 @@ const StyledMarkdown = ({ content, className = "" }: MarkdownProps) => {
 						</tr>
 					),
 					th: ({ children, ...props }: StandardProps) => (
-						<th
-							className="px-4 py-3 text-left font-semibold text-foreground border-r border-border last:border-r-0"
-							{...props}
-						>
+						<th className="px-4 py-3 text-left text-foreground border-r border-border last:border-r-0" {...props}>
 							{children}
 						</th>
 					),
@@ -137,7 +134,7 @@ const StyledMarkdown = ({ content, className = "" }: MarkdownProps) => {
 
 					// Strong and emphasis
 					strong: ({ children, ...props }: StandardProps) => (
-						<strong className="font-bold text-foreground" {...props}>
+						<strong className="text-foreground" {...props}>
 							{children}
 						</strong>
 					),
