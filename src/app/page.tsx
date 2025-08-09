@@ -119,10 +119,7 @@ const InterviewGuruLanding = () => {
 						<div className="grid md:grid-cols-2 gap-8 mt-10">
 							<div className="flex items-center gap-4">
 								<Avatar className="w-12 h-12">
-									<AvatarImage
-										src="https://media.licdn.com/dms/image/v2/D5603AQGa9BiYr8aywA/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1698988692214?e=1757548800&v=beta&t=zAZiYQ1YvRqdEvMGHZ2crn9hjC1vNyDuUHpcGaRrJKM"
-										alt="Shane Perera"
-									/>
+									<AvatarImage src="/shane_profile_image.jpeg" alt="Shane Perera" />
 									<AvatarFallback>SP</AvatarFallback>
 								</Avatar>
 								<div className="flex flex-col">
@@ -143,10 +140,7 @@ const InterviewGuruLanding = () => {
 
 							<div className="flex items-center gap-4">
 								<Avatar className="w-12 h-12">
-									<AvatarImage
-										src="https://media.licdn.com/dms/image/v2/D5603AQEtXTI9vN7DtQ/profile-displayphoto-shrink_800_800/B56ZYQMAycHQAc-/0/1744028308510?e=1757548800&v=beta&t=CQFR2ob8SMgGyOO7Sqxzz83fmCD5_hAzIMrry3RpTWQ"
-										alt="Luka Zoric"
-									/>
+									<AvatarImage src="luka_profile_image.png" alt="Luka Zoric" />
 									<AvatarFallback>LZ</AvatarFallback>
 								</Avatar>
 								<div className="flex flex-col">
