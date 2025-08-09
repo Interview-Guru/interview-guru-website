@@ -13,7 +13,7 @@ const BlogPageContentComponent = ({
 }) => {
 	return (
 		<section className="m-auto max-w-5xl mb-10 min-h-[65vh]">
-			<div className="max-w-5xl m-auto pt-4">
+			<div className="max-w-5xl m-auto pt-4 px-2">
 				<Link href={"/policy"} className="flex gap-2 text-xs items-center text-muted-foreground hover:text-primary ">
 					<ArrowLeft className="w-4 h-4" /> View all poicies
 				</Link>

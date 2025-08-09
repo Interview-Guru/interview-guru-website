@@ -39,7 +39,7 @@ export const HeaderSection = () => {
 						onClick={() => {
 							window.location.href = "https://app.interviewguru.io/sign-in";
 						}}
-						size="sm"
+						size="lg"
 						variant="ghost"
 						className="font-light"
 					>
@@ -49,9 +49,9 @@ export const HeaderSection = () => {
 						onClick={() => {
 							window.location.href = "https://app.interviewguru.io/sign-up";
 						}}
-						size="sm"
+						size="lg"
 					>
-						Sign up
+						Start Now
 					</Button>
 				</div>
 			</div>
