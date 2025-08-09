@@ -16,7 +16,7 @@ import ScrollableImageComponent from "@/components/ScrollableImageCarousel";
 import Image from "next/image";
 import CenterAlignedWithActiveBackgroundGray from "@/components/blocks/faq-sections/center-aligned";
 import { ListChecks, Lightbulb, Rocket } from "lucide-react";
-import { cn } from "@/lib/utils";
+import { AspectRatio } from "@/components/ui/aspect-ratio";
 
 const InterviewGuruLanding = () => {
 	const HeroSection = () => {
@@ -53,6 +53,9 @@ const InterviewGuruLanding = () => {
 						>
 							Start Now
 						</Button>
+						<div className="m-auto border border-input rounded-lg mt-10">
+							<Image alt="IG chat shot" src="/IG_chat_shot.png" width={1000} height={200} className="rounded-lg" />
+						</div>
 					</section>
 				</div>
 			</div>
@@ -254,7 +257,7 @@ const InterviewGuruLanding = () => {
 							}}
 							className="w-full md:w-[320px] m-auto md:text-lg md:p-6"
 						>
-							Start Your Plan In 60 Seconds
+							Start In Just 60 Seconds
 						</Button>
 
 						<p className="mt-3 text-xs text-muted-foreground"></p>
