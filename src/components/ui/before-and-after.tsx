@@ -54,8 +54,8 @@ export const BeforeAndAfter = ({ leftImage, rightImage }: { leftImage: string; r
 					</button>
 				</div>
 				<Image
-					src={leftImage}
-					alt={leftImage}
+					src={rightImage}
+					alt={rightImage}
 					width={1920}
 					height={1080}
 					priority
@@ -65,8 +65,8 @@ export const BeforeAndAfter = ({ leftImage, rightImage }: { leftImage: string; r
 					}}
 				/>
 				<Image
-					src={rightImage}
-					alt={rightImage}
+					src={leftImage}
+					alt={leftImage}
 					width={1920}
 					height={1080}
 					priority

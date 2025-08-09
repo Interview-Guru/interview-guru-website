@@ -54,8 +54,8 @@ const InterviewGuruLanding = () => {
 						>
 							Start Now
 						</Button>
-						<div className="hidden md:block mt-10 mb-40 m-auto h-auto w-full max-w-[1000px]">
-							<BeforeAndAfter leftImage="/IG_chat_shot.png" rightImage="/IG_pathway_shot.png" />
+						<div className="hidden md:block mt-10 m-auto h-auto w-full max-w-[1000px]">
+							<BeforeAndAfter leftImage="/IG_pathway_shot.png" rightImage="/IG_chat_shot.png" />
 						</div>
 					</section>
 				</div>
