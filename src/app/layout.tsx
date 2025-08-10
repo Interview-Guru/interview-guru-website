@@ -15,24 +15,17 @@ const geistMono = Geist_Mono({
 // Global metadata
 export const metadata: Metadata = {
 	metadataBase: new URL("https://www.interviewguru.io"),
-	title: {
-		default: "InterviewGuru | AI Powered Interview Prep That Actually Works",
-		template: "%s | InterviewGuru",
-	},
+	title: "InterviewGuru - AI Powered Interview Prep That Actually Works",
 	description: "Personalized, AI-guided interview preparation to help you land top offers.",
-	keywords: ["interview preparation", "coding interviews", "technical interview", "AI interview prep"],
-	authors: [{ name: "InterviewGuru" }],
-	creator: "InterviewGuru",
-	publisher: "InterviewGuru",
 	openGraph: {
 		type: "website",
-		siteName: "InterviewGuru",
+		url: "https://www.interviewguru.io",
 		title: "InterviewGuru - AI Powered Interview Prep That Actually Works",
 		description: "Personalized, AI-guided interview preparation to help you land top offers.",
-		url: "https://www.interviewguru.com",
+		siteName: "InterviewGuru",
 		images: [
 			{
-				url: "/IG_seo.jpg",
+				url: "https://opengraph.b-cdn.net/production/images/7124fce7-7712-4226-8331-a9e41e1ea607.png?token=EzGU8KJcI7QTCBSeaQge1cCiE1qWptFbRSNbIzNuwl4&height=630&width=1200&expires=33290797043",
 				width: 1200,
 				height: 630,
 				alt: "InterviewGuru Preview",
@@ -41,15 +34,12 @@ export const metadata: Metadata = {
 	},
 	twitter: {
 		card: "summary_large_image",
+		site: "@interview", // update when ready
 		title: "InterviewGuru - AI Powered Interview Prep That Actually Works",
 		description: "Personalized, AI-guided interview preparation to help you land top offers.",
-		images: ["/OG_seo.jpg"],
-		// creator: "@interview", // update when created
-	},
-	robots: {
-		index: true,
-		follow: true,
-		googleBot: { index: true, follow: true, "max-image-preview": "large" },
+		images: [
+			"https://opengraph.b-cdn.net/production/images/7124fce7-7712-4226-8331-a9e41e1ea607.png?token=EzGU8KJcI7QTCBSeaQge1cCiE1qWptFbRSNbIzNuwl4&height=630&width=1200&expires=33290797043",
+		],
 	},
 	icons: {
 		icon: [
@@ -59,7 +49,6 @@ export const metadata: Metadata = {
 		],
 		apple: [{ url: "/apple-touch-icon.png", sizes: "180x180" }],
 	},
-	manifest: "/site.webmanifest",
 };
 
 // Optional viewport settings (LCP / theme color best practice)
