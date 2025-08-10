@@ -16,7 +16,6 @@ import ScrollableImageComponent from "@/components/ScrollableImageCarousel";
 import Image from "next/image";
 import CenterAlignedWithActiveBackgroundGray from "@/components/blocks/faq-sections/center-aligned";
 import { ListChecks, Lightbulb, Rocket } from "lucide-react";
-import { AspectRatio } from "@/components/ui/aspect-ratio";
 import { BeforeAndAfter } from "@/components/ui/before-and-after";
 
 const InterviewGuruLanding = () => {
@@ -26,7 +25,7 @@ const InterviewGuruLanding = () => {
 				<div className="absolute w-full -z-10 -mt-[52px] h-[60%]">
 					<Aurora />
 				</div>
-				<div className="h-[calc(100svh-52px)] flex flex-col justify-around">
+				<div className="flex flex-col justify-around py-30">
 					<section className="px-6 flex flex-col gap-5">
 						<Badge variant="outline" className="m-auto flex items-center gap-2 rounded-2xl border-0.5 border p-3">
 							<p className="text-xs md:text-md m-auto font-light cursor-default">Trusted by 1000+ Engineers</p>
@@ -54,7 +53,7 @@ const InterviewGuruLanding = () => {
 						>
 							Start Now
 						</Button>
-						<div className="hidden md:block mt-10 m-auto h-auto w-full max-w-[1000px]">
+						<div className="hidden lg:block mt-20 m-auto h-auto w-full max-w-[1000px]">
 							<BeforeAndAfter leftImage="/IG_pathway_shot.png" rightImage="/IG_chat_shot.png" />
 						</div>
 					</section>
@@ -221,7 +220,7 @@ const InterviewGuruLanding = () => {
 		];
 
 		return (
-			<section className="px-6 flex flex-col gap-5 py-30 md:pb-0">
+			<section className="px-6 flex flex-col gap-5 py-20">
 				<div className="max-w-6xl mx-auto flex flex-col gap-5">
 					<Badge variant="outline" className="flex items-center gap-4 font-light p-3 rounded-full py-1 m-auto">
 						<span className="flex md:text-lg gap-2 items-center">Most Optimal Interview Prep</span>

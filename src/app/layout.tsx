@@ -32,7 +32,7 @@ export const metadata: Metadata = {
 		url: "https://www.interviewguru.com",
 		images: [
 			{
-				url: "/OG_seo.jpg",
+				url: "/IG_seo.jpg",
 				width: 1200,
 				height: 630,
 				alt: "InterviewGuru Preview",
