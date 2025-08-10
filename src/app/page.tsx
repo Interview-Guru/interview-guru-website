@@ -166,7 +166,7 @@ const InterviewGuruLanding = () => {
 
 	const CTASection = () => {
 		return (
-			<section className="px-6 flex flex-col gap-5 py-20">
+			<section className="px-6 flex flex-col gap-5 pb-10">
 				<div className="max-w-6xl mx-auto flex flex-col gap-5">
 					<h2 className="max-w-2xl text-4xl md:text-5xl font-bold text-center cursor-default mx-auto">
 						Your Dream Job Is Absolutely Worth It
@@ -189,7 +189,7 @@ const InterviewGuruLanding = () => {
 
 	const InterviewWithTheseCompaniesSection = () => {
 		return (
-			<div className="min-h-5xl pb-30 cursor-default">
+			<div className="min-h-5xl pb-20 cursor-default">
 				<ScrollableImageComponent />
 			</div>
 		);
