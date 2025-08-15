@@ -1,6 +1,7 @@
 import type { Metadata, Viewport } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
+import Script from "next/script";
 
 const geistSans = Geist({
 	variable: "--font-geist-sans",
@@ -64,7 +65,14 @@ export const viewport: Viewport = {
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
 	return (
 		<html lang="en">
-			<body className={`${geistSans.variable} ${geistMono.variable} antialiased dark`}>{children}</body>
+			<body className={`${geistSans.variable} ${geistMono.variable} antialiased dark`}>
+				<Script
+					src="https://cdn.tolt.io/tolt.js"
+					strategy="afterInteractive"
+					data-tolt={process.env.NEXT_PUBLIC_TOLT_PUBLIC_ID}
+				/>
+				{children}
+			</body>
 		</html>
 	);
 }
