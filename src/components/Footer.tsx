@@ -5,6 +5,8 @@ import { FaXTwitter } from "react-icons/fa6";
 import { Badge } from "./ui/badge";
 import { SmallLogo } from "./SmallLogo";
 import { IconBrandDiscord } from "@tabler/icons-react";
+import { Handshake } from "lucide-react";
+import { BsCash } from "react-icons/bs";
 
 export const FooterSection = () => {
 	const SocialMediaIcon = ({ icon, link }: { icon: ReactNode; link: string }) => {
@@ -57,6 +59,19 @@ export const FooterSection = () => {
 				</div>
 				<div className="flex items-left flex-wrap gap-10">
 					<div className="flex flex-col">
+						<p className="font-bold pb-3 cursor-default">Affiliate Program</p>
+						<div className="flex flex-col gap-2 text-muted-foreground font-light text-sm">
+							<Link
+								className="flex gap-1 items-center hover:text-primary"
+								target="_blank"
+								href={"https://interviewguru.tolt.io/"}
+							>
+								{/* <BsCash size={17} /> */}
+								Become an Affiliate
+							</Link>
+						</div>
+					</div>
+					<div className="flex flex-col">
 						<p className="font-bold pb-3 cursor-default">Legal</p>
 						<div className="flex flex-col gap-2 text-muted-foreground font-light text-sm">
 							<Link className="hover:text-primary" href={"/policy/terms"}>
@@ -76,6 +91,7 @@ export const FooterSection = () => {
 							<Link
 								href={"https://discord.com/invite/XwUJu7tBHW"}
 								className="flex gap-1 items-center hover:text-primary"
+								target="_blank"
 							>
 								<IconBrandDiscord size={17} />
 								Join the community
