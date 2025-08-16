@@ -55,15 +55,12 @@ const InterviewGuruLanding = () => {
 						>
 							Start Now
 						</Button>
-						{/* Angled screenshot with floor glow */}
 						<div
 							className="hidden lg:block relative mt-20 m-auto w-full max-w-[1000px]"
 							style={{ perspective: "1200px" }}
 						>
-							{/* Upward/floor glow */}
 							<div className="pointer-events-none absolute inset-x-0 bottom-0 h-1/2 rounded-[28px] bg-gradient-to-t from-black/60 via-black/20 to-transparent blur-3xl" />
 
-							{/* 3D tilted image */}
 							<Image
 								src="/IG_pathway_shot.png"
 								alt="InterviewGuru Pathway"
