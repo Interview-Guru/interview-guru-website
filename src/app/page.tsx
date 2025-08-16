@@ -55,8 +55,24 @@ const InterviewGuruLanding = () => {
 						>
 							Start Now
 						</Button>
-						<div className="hidden lg:block mt-20 m-auto h-auto w-full max-w-[1000px]">
-							<BeforeAndAfter leftImage="/IG_pathway_shot.png" rightImage="/IG_chat_shot.png" />
+						{/* Angled screenshot with floor glow */}
+						<div
+							className="hidden lg:block relative mt-20 m-auto w-full max-w-[1000px]"
+							style={{ perspective: "1200px" }}
+						>
+							{/* Upward/floor glow */}
+							<div className="pointer-events-none absolute inset-x-0 bottom-0 h-1/2 rounded-[28px] bg-gradient-to-t from-black/60 via-black/20 to-transparent blur-3xl" />
+
+							{/* 3D tilted image */}
+							<Image
+								src="/IG_pathway_shot.png"
+								alt="InterviewGuru Pathway"
+								width={1000}
+								height={600}
+								className="relative rounded-2xl shadow-2xl transform-gpu will-change-transform"
+								style={{ transform: "rotateX(8deg) rotateZ(-4deg) scale(1.02)" }}
+								priority
+							/>
 						</div>
 					</section>
 				</div>
