@@ -5,8 +5,6 @@ import { FaXTwitter } from "react-icons/fa6";
 import { Badge } from "./ui/badge";
 import { SmallLogo } from "./SmallLogo";
 import { IconBrandDiscord } from "@tabler/icons-react";
-import { Handshake } from "lucide-react";
-import { BsCash } from "react-icons/bs";
 
 export const FooterSection = () => {
 	const SocialMediaIcon = ({ icon, link }: { icon: ReactNode; link: string }) => {
