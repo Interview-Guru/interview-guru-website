@@ -41,7 +41,7 @@ const InterviewGuruLanding = () => {
 						</Badge>
 
 						<h1 className="max-w-3xl text-4xl md:text-5xl lg:text-6xl font-bold text-center cursor-default mx-auto">
-							AI Powered Interview Prep That Actually Works
+							Grinding endless Leetcode is why you&apos;re not landing FANG offers
 						</h1>
 						<p className="text-muted-foreground font-light cursor-default text-center max-w-lg m-auto md:text-lg">
 							Get a personalized learning path with an AI mentor and skip months of random tutorials and get
