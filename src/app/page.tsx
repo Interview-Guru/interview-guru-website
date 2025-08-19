@@ -41,7 +41,7 @@ const InterviewGuruLanding = () => {
 						</Badge>
 
 						<h1 className="max-w-3xl text-4xl md:text-5xl lg:text-6xl font-bold text-center cursor-default mx-auto">
-							Grinding Leetcode won&apos;t get you the FAANG offer.
+							Grinding Leetcode won&apos;t get you the FAANG Offer
 						</h1>
 						<p className="text-muted-foreground font-light cursor-default text-center max-w-lg m-auto md:text-lg">
 							Get a personalized learning path with an AI mentor and skip months of random tutorials and get
