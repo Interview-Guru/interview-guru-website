@@ -92,7 +92,7 @@ const InterviewGuruLanding = () => {
 				{/* Main heading */}
 				<Badge variant="outline" className="flex items-center gap-4 font-light p-3 rounded-full py-1 m-auto mb-5">
 					<span className="flex md:text-lg gap-2 items-center">
-						Built by ex-interviews at <BsAmazon className="text-yellow-300" />
+						Built by ex-interviews at <BsAmazon />
 					</span>
 					{/* <span className="flex items-centers gap-1 font-semibold md:text-lg">
 						Try it here
