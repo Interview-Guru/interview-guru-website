@@ -16,7 +16,6 @@ import ScrollableImageComponent from "@/components/ScrollableImageCarousel";
 import Image from "next/image";
 import CenterAlignedWithActiveBackgroundGray from "@/components/blocks/faq-sections/center-aligned";
 import { ListChecks, Lightbulb, Rocket } from "lucide-react";
-import { BeforeAndAfter } from "@/components/ui/before-and-after";
 import { TestimonialsColumn } from "@/components/blocks/testimonials-columns-1";
 import { motion } from "motion/react";
 
@@ -44,8 +43,8 @@ const InterviewGuruLanding = () => {
 							Grinding Leetcode won&apos;t get you the FAANG Offer
 						</h1>
 						<p className="text-muted-foreground font-light cursor-default text-center max-w-lg m-auto md:text-lg">
-							Get a personalized learning path with an AI mentor and skip months of random tutorials and get
-							laser-focused prep for your exact target role.
+							Get a personalized learning path with an AI mentor, skip months of random tutorials and get laser-focused
+							prep for your exact target role.
 						</p>
 						<Button
 							onClick={() => {
