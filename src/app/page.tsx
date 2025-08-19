@@ -30,7 +30,7 @@ const InterviewGuruLanding = () => {
 				<div className="flex flex-col justify-around py-30">
 					<section className="px-6 flex flex-col gap-5">
 						<Badge variant="outline" className="m-auto flex items-center gap-2 rounded-2xl border-0.5 border p-3">
-							<p className="text-xs md:text-md m-auto font-light cursor-default">Trusted by 1000+ Engineers</p>
+							<p className="text-xs md:text-md m-auto font-light cursor-default">Trusted by 1000+ Developers</p>
 							<div className="flex gap-0.75">
 								<FaStar className="w-3 h-3 text-yellow-400" />
 								<FaStar className="w-3 h-3 text-yellow-400" />
@@ -112,18 +112,18 @@ const InterviewGuruLanding = () => {
 							prepare us for real interviews.
 							<br />
 							<br />
-							Starting from nothing, we both worked our way up to senior level positions by figuring out
-							the hard way that{" "}
+							Starting from nothing, we both worked our way up to senior level positions by figuring out the hard way
+							that{" "}
 							<strong>success comes from understanding patterns and core concepts, not memorizing solutions.</strong>
 							<br />
 							<br />
 							<strong>
-								Through interviewing and mentoring other engineers, we developed our own interview prep protocol that
+								Through interviewing and mentoring other developers, we developed our own interview prep protocol that
 								leverages AI to accelerate the learning process.
 							</strong>{" "}
 							<br />
 							<br />
-							After successfully helping engineers land FAANG offers using this method,{" "}
+							After successfully helping developers land FAANG offers using this method,{" "}
 							<strong>
 								we decided to package our proven system into a platform that makes this approach available to everyone.
 							</strong>
@@ -369,7 +369,7 @@ const InterviewGuruLanding = () => {
 									<Image src="/white_logo.png" alt="IG Logo" width={60} height={60} className="object-contain" />{" "}
 								</div>
 								<div>
-									<h3 className="text-2xl font-bold text-card-foreground">IG Pro</h3>
+									<h3 className="text-2xl font-bold text-card-foreground">IG Pro Plan</h3>
 									<p className="text-muted-foreground">Billed monthly</p>
 								</div>
 							</div>
