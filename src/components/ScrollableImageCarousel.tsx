@@ -41,10 +41,10 @@ const ScrollableImageComponent = () => {
 				{/* Heading */}
 				<div className="text-center mb-12 flex flex-col">
 					<h2 className="text-2xl md:text-4xl font-bold text-foreground max-w-2xl m-auto mb-1.5">
-						Land Offers at Top Companies
+						Get The Right Prep For The Right Company
 					</h2>
 					<p className="text-muted-foreground text-lg">
-						Get company-specific interview prep for 400+ leading employers
+						Not a question bank. A proven protocol that maps high-impact skills to 400+ interview processes.
 					</p>
 				</div>
 
