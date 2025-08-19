@@ -41,7 +41,7 @@ const ScrollableImageComponent = () => {
 				{/* Heading */}
 				<div className="text-center mb-12 flex flex-col">
 					<h2 className="text-2xl md:text-4xl font-bold text-foreground max-w-2xl m-auto mb-1.5">
-						Get The Right Prep for The Right Company
+						Grinding Leetcode won&apos;t get you the FAANG offer
 					</h2>
 					<p className="text-muted-foreground text-lg">
 						Not a question bank. A proven protocol that maps high-impact skills to 400+ interview processes.
