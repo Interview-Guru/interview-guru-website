@@ -53,8 +53,9 @@ const InterviewGuruLanding = () => {
 							}}
 							className="w-full md:w-[220px] m-auto md:text-lg md:p-6"
 						>
-							Start Now
+							See My Prep Plan
 						</Button>
+						<p className="m-auto text-xs text-muted-foreground -mt-2">Takes 2 minutes</p>
 						<div
 							className="hidden lg:block relative mt-20 m-auto w-full max-w-[1000px]"
 							style={{ perspective: "1200px" }}
@@ -91,7 +92,7 @@ const InterviewGuruLanding = () => {
 				{/* Main heading */}
 				<Badge variant="outline" className="flex items-center gap-4 font-light p-3 rounded-full py-1 m-auto mb-5">
 					<span className="flex md:text-lg gap-2 items-center">
-						Built by ex-interviews at <BsAmazon />
+						Built by ex-interviews at <BsAmazon className="text-yellow-300" />
 					</span>
 					{/* <span className="flex items-centers gap-1 font-semibold md:text-lg">
 						Try it here
@@ -195,8 +196,9 @@ const InterviewGuruLanding = () => {
 						}}
 						className="w-full md:w-[220px] m-auto md:text-lg md:p-6"
 					>
-						Get Started Now
+						See My Prep Plan
 					</Button>
+					<p className="m-auto text-xs text-muted-foreground -mt-2">Takes 2 minutes</p>
 				</div>
 			</section>
 		);
