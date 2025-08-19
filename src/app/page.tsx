@@ -63,7 +63,7 @@ const InterviewGuruLanding = () => {
 							<div className="pointer-events-none absolute inset-x-0 bottom-0 h-1/2 rounded-[28px] bg-gradient-to-t from-black/60 via-black/20 to-transparent blur-3xl" />
 
 							<Image
-								src="/IG_pathway_shot.png"
+								src="/IG_chat_shot.png"
 								alt="InterviewGuru Pathway"
 								width={1000}
 								height={600}
