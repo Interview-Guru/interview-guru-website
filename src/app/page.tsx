@@ -1,7 +1,7 @@
 "use client";
 
 import React from "react";
-import { Target, Check, Lock } from "lucide-react";
+import { Target, Check, Lock, ChevronRight, Clock } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
@@ -18,6 +18,7 @@ import CenterAlignedWithActiveBackgroundGray from "@/components/blocks/faq-secti
 import { ListChecks, Lightbulb, Rocket } from "lucide-react";
 import { TestimonialsColumn } from "@/components/blocks/testimonials-columns-1";
 import { motion } from "motion/react";
+import UsVsThemSection from "@/components/UsVsThemSection";
 
 const InterviewGuruLanding = () => {
 	const HeroSection = () => {
@@ -46,15 +47,20 @@ const InterviewGuruLanding = () => {
 							Get a personalized learning path with an AI mentor, skip months of random tutorials and get laser-focused
 							prep for your exact target role.
 						</p>
-						<Button
-							onClick={() => {
-								window.location.href = "https://app.interviewguru.io/sign-up";
-							}}
-							className="w-full md:w-[220px] m-auto md:text-lg md:p-6"
-						>
-							See My Prep Plan
-						</Button>
-						<p className="m-auto text-xs text-muted-foreground -mt-2">Takes 2 minutes</p>
+						<div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
+							<Button
+								size="lg"
+								className="bg-gradient-to-r from-green-600 to-emerald-600 hover:from-green-700 hover:to-emerald-700 text-white"
+								onClick={() => (window.location.href = "https://app.interviewguru.io/sign-up")}
+							>
+								Get Your Personalized Path
+								<ChevronRight className="w-4 h-4 ml-2" />
+							</Button>
+							<div className="flex items-center gap-2 text-xs text-muted-foreground">
+								<Clock className="w-4 h-4" />
+								<span>Takes 2 minutes</span>
+							</div>
+						</div>
 						<div
 							className="hidden lg:block relative mt-20 m-auto w-full max-w-[1000px]"
 							style={{ perspective: "1200px" }}
@@ -99,7 +105,7 @@ const InterviewGuruLanding = () => {
 					</span> */}
 				</Badge>
 				<div className="text-center mb-12">
-					<h2 className="text-2xl md:text-4xl font-bold text-foreground max-w-2xl m-auto">
+					<h2 className="text-3xl md:text-5xl font-bold text-foreground max-w-2xl m-auto">
 						We built InterviewGuru Because It&apos;s What We Wish Existed
 					</h2>
 				</div>
@@ -189,15 +195,20 @@ const InterviewGuruLanding = () => {
 					<p className="text-muted-foreground font-light cursor-default text-center max-w-lg m-auto md:text-lg">
 						Join thousands who went from interview anxiety to job offers in as early as 8 weeks.
 					</p>
-					<Button
-						onClick={() => {
-							window.location.href = "https://app.interviewguru.io/sign-up";
-						}}
-						className="w-full md:w-[220px] m-auto md:text-lg md:p-6"
-					>
-						See My Prep Plan
-					</Button>
-					<p className="m-auto text-xs text-muted-foreground -mt-2">Takes 2 minutes</p>
+					<div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
+						<Button
+							size="lg"
+							className="bg-gradient-to-r from-green-600 to-emerald-600 hover:from-green-700 hover:to-emerald-700 text-white"
+							onClick={() => (window.location.href = "https://app.interviewguru.io/sign-up")}
+						>
+							Get Your Personalized Path
+							<ChevronRight className="w-4 h-4 ml-2" />
+						</Button>
+						<div className="flex items-center gap-2 text-xs text-muted-foreground">
+							<Clock className="w-4 h-4" />
+							<span>Takes 2 minutes</span>
+						</div>
+					</div>
 				</div>
 			</section>
 		);
@@ -241,7 +252,9 @@ const InterviewGuruLanding = () => {
 					<Badge variant="outline" className="flex items-center gap-4 font-light p-3 rounded-full py-1 m-auto">
 						<span className="flex md:text-lg gap-2 items-center">Most Optimal Interview Prep</span>
 					</Badge>
-					<h2 className="text-2xl md:text-4xl font-bold text-foreground max-w-2xl m-auto">How InterviewGuru Works</h2>
+					<h2 className="text-3xl md:text-5xl font-bold text-foreground max-w-2xl m-auto text-center">
+						How InterviewGuru Works
+					</h2>
 					<p className="text-muted-foreground font-light cursor-default text-center max-w-lg m-auto md:text-lg">
 						A clear, focused path from setup to final prep—so all you need to do is keep solving.
 					</p>
@@ -534,7 +547,7 @@ const InterviewGuruLanding = () => {
 			<InterviewWithTheseCompaniesSection />
 			<AboutUsSection />
 			<HowItWorksSection />
-			{/* <UsVsThemSection /> */}
+			<UsVsThemSection />
 			{/* <SocialProof /> */}
 			<PricingSection />
 			<FAQSection />
