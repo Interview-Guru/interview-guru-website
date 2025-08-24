@@ -58,14 +58,13 @@ const ScrollableImageComponent = () => {
 						{allImages.map((image, index) => (
 							<div
 								key={`${image.name}-${index}`}
-								className="flex-shrink-0 bg-card/50 backdrop-blur-sm rounded-lg hover:bg-card/70 transition-all duration-300 hover:scale-105 border border-border"
-								style={{ minWidth: "200px", height: "120px" }}
+								className="sm:w-[200px] sm:h-[150px] flex-shrink-0 transition-all duration-300 group brightness-100 sm:[&_img]:brightness-0 sm:[&_img]:invert [&_img]:transition-all [&_img]:duration-300 hover:[&_img]:brightness-100 hover:[&_img]:invert-0"
 							>
 								<div className="w-full h-full flex items-center justify-center">
 									<Image
 										src={image.logo}
 										alt={image.name}
-										width={150}
+										width={100}
 										height={100}
 										className="max-w-full max-h-full object-contain opacity-70 hover:opacity-100 transition-opacity duration-300"
 									/>
