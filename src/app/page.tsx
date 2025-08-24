@@ -132,7 +132,7 @@ const InterviewGuruLanding = () => {
 
 						<div className="grid md:grid-cols-2 gap-8 mt-10">
 							<div className="flex items-center gap-4">
-								<Avatar className="w-12 h-12">
+								<Avatar className="w-16 h-16">
 									<AvatarImage src="/shane_profile_image.jpeg" alt="Shane Perera" />
 									<AvatarFallback>SP</AvatarFallback>
 								</Avatar>
@@ -144,16 +144,16 @@ const InterviewGuruLanding = () => {
 										Shane Perera
 										<BsLinkedin />
 									</Link>
-									<div className="text-xs text-muted-foreground">Co-founder, InterviewGuru</div>
-									<div className="flex items-center gap-1 text-xs text-muted-foreground">
-										Amazon Alumini
+									<div className="text-sm text-muted-foreground">Co-founder, InterviewGuru</div>
+									<div className="flex items-center gap-1 text-muted-foreground">
+										Amazon Alumni
 										<BsAmazon />
 									</div>
 								</div>
 							</div>
 
 							<div className="flex items-center gap-4">
-								<Avatar className="w-12 h-12">
+								<Avatar className="w-16 h-16">
 									<AvatarImage src="luka_profile_image.png" alt="Luka Zoric" />
 									<AvatarFallback>LZ</AvatarFallback>
 								</Avatar>
@@ -165,9 +165,9 @@ const InterviewGuruLanding = () => {
 										Luka Zoric
 										<BsLinkedin />
 									</Link>
-									<div className="text-xs text-muted-foreground">Co-founder, InterviewGuru</div>
-									<div className="flex items-center gap-1 text-xs text-muted-foreground">
-										Amazon Alumini
+									<div className="text-sm text-muted-foreground">Co-founder, InterviewGuru</div>
+									<div className="flex items-center gap-1 text-muted-foreground">
+										Amazon Alumni
 										<BsAmazon />
 									</div>
 								</div>
