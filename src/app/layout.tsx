@@ -16,15 +16,15 @@ const geistMono = Geist_Mono({
 // Global metadata
 export const metadata: Metadata = {
 	metadataBase: new URL("https://www.interviewguru.io"),
-	title: "InterviewGuru | AI Powered Interview Prep That Actually Works",
+	title: "InterviewGuru | Leetcode + AI",
 	description:
-		"Personalized, AI guided interview prep that maps your pathway across topics and company patterns, with tutor-style hints, structured practice, and progress tracking to land top offers.",
+		"Get a personalized learning path with an AI mentor, skip months of random tutorials and get laser-focused prep for your exact target role.",
 	openGraph: {
 		type: "website",
 		url: "https://www.interviewguru.io",
-		title: "InterviewGuru | AI Powered Interview Prep That Actually Works",
+		title: "InterviewGuru | Leetcode + AI",
 		description:
-			"Personalized, AI-guided interview prep that maps your pathway across topics and company patterns, with tutor-style hints, structured practice, and progress tracking to land top offers.",
+			"Get a personalized learning path with an AI mentor, skip months of random tutorials and get laser-focused prep for your exact target role.",
 		siteName: "InterviewGuru",
 		images: [
 			{
@@ -38,9 +38,9 @@ export const metadata: Metadata = {
 	twitter: {
 		card: "summary_large_image",
 		site: "@interview", // update when ready
-		title: "InterviewGuru | AI Powered Interview Prep That Actually Works",
+		title: "InterviewGuru | Leetcode + AI",
 		description:
-			"Personalized, AI-guided interview prep that maps your pathway across topics and company patterns, with tutor-style hints, structured practice, and progress tracking to land top offers.",
+			"Get a personalized learning path with an AI mentor, skip months of random tutorials and get laser-focused prep for your exact target role.",
 		images: [
 			"https://opengraph.b-cdn.net/production/images/7124fce7-7712-4226-8331-a9e41e1ea607.png?token=EzGU8KJcI7QTCBSeaQge1cCiE1qWptFbRSNbIzNuwl4&height=630&width=1200&expires=33290797043",
 		],
