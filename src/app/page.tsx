@@ -87,7 +87,7 @@ const InterviewGuruLanding = () => {
 
 	const AboutUsSection = () => {
 		return (
-			<div className="max-w-4xl mx-auto px-6 cursor-default">
+			<div className="max-w-4xl mx-auto px-6 cursor-default py-20">
 				{/* Main heading */}
 				<Badge variant="outline" className="flex items-center gap-4 font-light p-3 rounded-full py-1 m-auto mb-5">
 					<span className="flex md:text-lg gap-2 items-center">
@@ -181,7 +181,7 @@ const InterviewGuruLanding = () => {
 
 	const CTASection = () => {
 		return (
-			<section className="px-6 flex flex-col gap-5 pb-10">
+			<section className="px-6 flex flex-col gap-5 py-20">
 				<div className="max-w-6xl mx-auto flex flex-col gap-5">
 					<h2 className="max-w-2xl text-4xl md:text-5xl font-bold text-center cursor-default mx-auto">
 						Your Dream Job Is Absolutely Worth It
@@ -205,7 +205,7 @@ const InterviewGuruLanding = () => {
 
 	const InterviewWithTheseCompaniesSection = () => {
 		return (
-			<div className="min-h-5xl pb-20 cursor-default">
+			<div className="min-h-5xl cursor-default">
 				<ScrollableImageComponent />
 			</div>
 		);
@@ -277,7 +277,7 @@ const InterviewGuruLanding = () => {
 
 	const PricingSection = () => {
 		return (
-			<section className="min-h-[calc(100svh-52px)] flex flex-col justify-around py-10">
+			<section className="flex flex-col justify-around py-20">
 				<div className="mx-auto px-6">
 					<div className="text-center mb-16">
 						<Badge variant="outline" className="flex items-center gap-4 font-light p-3 rounded-full py-1 m-auto mb-5">
