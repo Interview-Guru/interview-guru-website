@@ -1,5 +1,5 @@
 import React from "react";
-import { Check, X, Sparkles, Trophy, AlertCircle, ChevronRight, Clock } from "lucide-react";
+import { Check, X, ChevronRight, Clock } from "lucide-react";
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { motion } from "framer-motion";
