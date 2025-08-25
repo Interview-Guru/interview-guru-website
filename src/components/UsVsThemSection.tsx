@@ -70,7 +70,6 @@ const UsVsThemSection = () => {
 						variant="outline"
 						className="flex items-center gap-2 font-light p-3 rounded-full py-1 m-auto mb-5 w-fit"
 					>
-						<Sparkles className="w-4 h-4" />
 						<span className="md:text-lg">Why We&apos;re Different</span>
 					</Badge>
 					<h2 className="text-3xl md:text-5xl font-bold text-foreground max-w-3xl m-auto mb-4">
