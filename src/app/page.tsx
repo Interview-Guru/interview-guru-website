@@ -256,7 +256,7 @@ const InterviewGuruLanding = () => {
 						How InterviewGuru Works
 					</h2>
 					<p className="text-muted-foreground font-light cursor-default text-center max-w-lg m-auto md:text-lg">
-						A clear, focused path from setup to final prep—so all you need to do is keep solving.
+						A clear, focused path from setup to final prep-so all you need to do is keep solving.
 					</p>
 
 					<div className="mt-10 grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-4">
