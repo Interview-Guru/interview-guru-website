@@ -288,27 +288,6 @@ const InterviewGuruLanding = () => {
 		);
 	};
 
-	const BetaOffer = () => {
-		return (
-			<div className="sticky bottom-0 z-1000 border-t-1 border-foreground">
-				<div className="bg-white text-black flex justify-around items-center gap-2 text-md p-4">
-					<div className="flex gap-2 items-center">
-						<Clock className="w-5 h-6 text-red-400" />
-						<p className="flex items-center gap-1">
-							<span className="font-semibold ">50% OFF Early Bird</span> – Use Code
-							<Badge
-								variant="outline"
-								className="ml-1 text-white outline-red-400 outline-1 rounded-sm bg-red-700 text-sm"
-							>
-								BETA50
-							</Badge>
-						</p>
-					</div>
-				</div>
-			</div>
-		);
-	};
-
 	const PricingSection = () => {
 		return (
 			<section className="flex flex-col justify-around py-20">
@@ -478,6 +457,21 @@ const InterviewGuruLanding = () => {
 					</div>
 				</div>
 			</section>
+		);
+	};
+
+	const BetaOffer = () => {
+		return (
+			<div className="sticky bottom-0 sm:hidden z-1000 border-foreground bg-red-700 text-white">
+				<div className="flex justify-around items-center text-sm py-1.5">
+					<div className="flex-col gap-2 items-center">
+						<p className="text-center gap-1">
+							<span className="font-semibold ">Early Bird:</span> Use Code <strong>BETA50</strong> at checkout for 50%
+							OFF
+						</p>
+					</div>
+				</div>
+			</div>
 		);
 	};
 

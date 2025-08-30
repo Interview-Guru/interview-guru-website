@@ -1,6 +1,23 @@
 import Link from "next/link";
 import { SmallLogo } from "./SmallLogo";
 import { Button } from "./ui/button";
+import { Clock } from "lucide-react";
+
+const BetaOffer = () => {
+	return (
+		<div className="hidden sm:block border-foreground bg-red-700 text-white">
+			<div className="flex justify-around items-center gap-2 text-sm py-1.5">
+				<div className="flex gap-2 items-center">
+					<Clock className="w-5 h-6 text-white" />
+					<p className="flex items-center gap-1">
+						<span className="font-semibold ">Early Bird:</span> Use Code
+						<strong>BETA50</strong> at checkout for 50% OFF
+					</p>
+				</div>
+			</div>
+		</div>
+	);
+};
 
 export const HeaderSection = () => {
 	const scrollToSection = (sectionId: string) => {
@@ -56,6 +73,7 @@ export const HeaderSection = () => {
 					</Button>
 				</div>
 			</div>
+			<BetaOffer />
 		</header>
 	);
 };
