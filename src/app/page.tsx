@@ -324,9 +324,7 @@ const InterviewGuruLanding = () => {
 						<h2 className="text-2xl md:text-4xl font-bold text-foreground max-w-2xl m-auto mb-1.5">
 							Prepare Smarter. Interview better. Secure High-Paying Roles
 						</h2>
-						<p className="text-muted-foreground text-lg">
-							Get full access to everything you need to land your dream job.
-						</p>
+						<p className="text-muted-foreground text-lg">Get full access to everything you need for half the price.</p>
 					</div>
 
 					<div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
@@ -346,15 +344,24 @@ const InterviewGuruLanding = () => {
 									<h3 className="text-2xl font-bold text-card-foreground">IG Pro Plan</h3>
 									<p className="text-muted-foreground flex gap-2 items-center">
 										Billed quarterly{" "}
-										<Badge variant="outline" className="text-white outline-green-400 outline-1 rounded-sm bg-green-900">
+										{/* <Badge variant="outline" className="text-white outline-green-400 outline-1 rounded-sm bg-green-900">
 											45% OFF
-										</Badge>
+										</Badge> */}
 									</p>
 								</div>
 							</div>
 
 							<div className="text-4xl font-bold text-card-foreground mb-1">
 								$24.99<span className="text-sm font-normal"> / month</span>
+							</div>
+							<div className="flex justify-left text-left text-sm ">
+								<p className="pt-4">
+									<strong>Early Bird Offer:</strong> Use code{" "}
+									<Badge variant="outline" className="ml-1 outline-red-400 text-white outline-2 rounded-sm text-sm">
+										BETA50
+									</Badge>{" "}
+									<span className="pl-1">at checkout for 50% OFF</span>
+								</p>
 							</div>
 							<Button
 								onClick={() => {
@@ -412,7 +419,15 @@ const InterviewGuruLanding = () => {
 							<div className="text-4xl font-bold text-card-foreground mb-1">
 								$44.99<span className="text-sm font-normal"> / month</span>
 							</div>
-
+							<div className="flex justify-left text-left text-sm">
+								<p className="pt-4">
+									<strong>Early Bird Offer:</strong> Use code{" "}
+									<Badge variant="outline" className="ml-1 outline-red-400 text-white outline-2 rounded-sm text-sm">
+										BETA50
+									</Badge>{" "}
+									<span className="pl-1">at checkout for 50% OFF</span>
+								</p>
+							</div>
 							<Button
 								onClick={() => {
 									window.location.href = "https://app.interviewguru.io/sign-up";
