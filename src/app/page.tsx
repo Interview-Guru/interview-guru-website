@@ -1,7 +1,7 @@
 "use client";
 
 import React from "react";
-import { Target, Check, Lock, ChevronRight, Clock } from "lucide-react";
+import { Target, Check, Lock, ChevronRight, Clock, Bird } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
@@ -288,6 +288,27 @@ const InterviewGuruLanding = () => {
 		);
 	};
 
+	const BetaOffer = () => {
+		return (
+			<div className="sticky bottom-0 z-1000 border-t-1 border-foreground">
+				<div className="bg-white text-black flex justify-around items-center gap-2 text-md p-4">
+					<div className="flex gap-2 items-center">
+						<Clock className="w-5 h-6 text-red-400" />
+						<p className="flex items-center gap-1">
+							<span className="font-semibold ">50% OFF Early Bird</span> – Use Code
+							<Badge
+								variant="outline"
+								className="ml-1 text-white outline-red-400 outline-1 rounded-sm bg-red-700 text-sm"
+							>
+								BETA50
+							</Badge>
+						</p>
+					</div>
+				</div>
+			</div>
+		);
+	};
+
 	const PricingSection = () => {
 		return (
 			<section className="flex flex-col justify-around py-20">
@@ -553,6 +574,7 @@ const InterviewGuruLanding = () => {
 			<FAQSection />
 			<CTASection />
 			<FooterSection />
+			<BetaOffer />
 		</div>
 	);
 };
