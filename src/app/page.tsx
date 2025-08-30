@@ -471,8 +471,8 @@ const InterviewGuruLanding = () => {
 
 	const BetaOffer = () => {
 		return (
-			<div className="sticky bottom-0 sm:hidden z-1000 border-foreground bg-red-500 text-white">
-				<div className="flex justify-around items-center text-sm py-3">
+			<div className="sticky w-full top-[57px] sm:hidden z-1000 border-foreground bg-red-500 text-white">
+				<div className="flex justify-around items-center text-sm py-2">
 					<div className="flex-col gap-2 items-center">
 						<p className="text-center gap-1">
 							<span className="font-semibold ">Early Bird:</span> Use Code <strong>BETA50</strong> at checkout for 50%
@@ -582,6 +582,7 @@ const InterviewGuruLanding = () => {
 	return (
 		<div className="min-h-screen cursor-default">
 			<HeaderSection />
+			<BetaOffer />
 			<HeroSection />
 			<InterviewWithTheseCompaniesSection />
 			<AboutUsSection />
@@ -592,7 +593,6 @@ const InterviewGuruLanding = () => {
 			<FAQSection />
 			<CTASection />
 			<FooterSection />
-			<BetaOffer />
 		</div>
 	);
 };
