@@ -5,7 +5,7 @@ import { Clock } from "lucide-react";
 
 const BetaOffer = () => {
 	return (
-		<div className="hidden sm:block border-foreground bg-red-700 text-white">
+		<div className="hidden sm:block border-foreground bg-red-500 text-white">
 			<div className="flex justify-around items-center gap-2 text-sm py-1.5">
 				<div className="flex gap-2 items-center">
 					<Clock className="w-5 h-6 text-white" />
@@ -24,8 +24,8 @@ export const HeaderSection = () => {
 		document.getElementById(sectionId)?.scrollIntoView({ behavior: "smooth" });
 	};
 	return (
-		<header className="sticky bg-background backdrop-blur-lg top-0 w-full border-b z-100">
-			<div className="flex justify-between p-2 items-center max-w-5xl m-auto">
+		<header className="sticky bg-background backdrop-blur-lg top-0 w-full z-100">
+			<div className="flex justify-between p-2 items-center max-w-5xl m-auto border-b">
 				<Link href={"/"}>
 					<div className="md:hidden">
 						<SmallLogo showText={false} />

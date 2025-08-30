@@ -330,8 +330,13 @@ const InterviewGuruLanding = () => {
 								</div>
 							</div>
 
-							<div className="text-4xl font-bold text-card-foreground mb-1">
-								$24.99<span className="text-sm font-normal"> / month</span>
+							<div className="text-xl font-bold text-card-foreground mb-1 opacity-70">
+								<s>$24.99</s>
+								<span className="text-sm font-normal"> / month</span>
+							</div>
+							<div className="text-4xl font-bold text-red-400 mb-1">
+								$12.45
+								<span className="text-sm font-normal"> / month</span>
 							</div>
 							<div className="flex justify-left text-left text-sm ">
 								<p className="pt-4">
@@ -395,8 +400,12 @@ const InterviewGuruLanding = () => {
 								</div>
 							</div>
 
-							<div className="text-4xl font-bold text-card-foreground mb-1">
-								$44.99<span className="text-sm font-normal"> / month</span>
+							<div className="text-xl font-bold text-card-foreground mb-1 opacity-70">
+								<s>$44.99</s>
+								<span className="text-sm font-normal"> / month</span>
+							</div>
+							<div className="text-4xl font-bold text-red-400 mb-1">
+								$22.45<span className="text-sm font-normal"> / month</span>
 							</div>
 							<div className="flex justify-left text-left text-sm">
 								<p className="pt-4">
@@ -462,8 +471,8 @@ const InterviewGuruLanding = () => {
 
 	const BetaOffer = () => {
 		return (
-			<div className="sticky bottom-0 sm:hidden z-1000 border-foreground bg-red-700 text-white">
-				<div className="flex justify-around items-center text-sm py-1.5">
+			<div className="sticky bottom-0 sm:hidden z-1000 border-foreground bg-red-500 text-white">
+				<div className="flex justify-around items-center text-sm py-3">
 					<div className="flex-col gap-2 items-center">
 						<p className="text-center gap-1">
 							<span className="font-semibold ">Early Bird:</span> Use Code <strong>BETA50</strong> at checkout for 50%
