@@ -354,7 +354,7 @@ const InterviewGuruLanding = () => {
 								}}
 								className="w-full py-3 px-6 rounded-xl font-semibold mb-6 mt-8 transition-colors"
 							>
-								Subscribe
+								Try for Free
 							</Button>
 
 							<div className="flex items-center gap-2 text-sm text-muted-foreground mb-6">
@@ -424,7 +424,7 @@ const InterviewGuruLanding = () => {
 								variant="secondary"
 								className="w-full py-3 px-6 rounded-xl font-semibold mb-6 mt-8 transition-colors"
 							>
-								Subscribe
+								Try for Free
 							</Button>
 
 							<div className="flex items-center gap-2 text-sm text-muted-foreground mb-6">
