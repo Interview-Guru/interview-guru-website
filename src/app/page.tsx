@@ -7,7 +7,6 @@ import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import Aurora from "@/components/react-bits/Aurora";
-import { FaStar } from "react-icons/fa";
 import { HeaderSection } from "@/components/Header";
 import { FooterSection } from "@/components/Footer";
 import { BsAmazon, BsLinkedin } from "react-icons/bs";
@@ -29,15 +28,17 @@ const InterviewGuruLanding = () => {
 				</div>
 				<div className="flex flex-col justify-around py-30">
 					<section className="px-6 flex flex-col gap-5">
-						<Badge variant="outline" className="m-auto flex items-center gap-2 rounded-2xl border-0.5 border p-3">
-							<p className="text-xs md:text-md m-auto font-light cursor-default">Trusted by 1000+ Developers</p>
-							<div className="flex gap-0.75">
+						<Badge variant="outline" className="m-auto flex items-center gap-2 rounded-2xl border-0.5 border p-3 py-2">
+							<p className="text-xs md:text-md m-auto font-light cursor-default">
+								Currently in Beta. Try for FREE Today.
+							</p>
+							{/* <div className="flex gap-0.75">
 								<FaStar className="w-3 h-3 text-yellow-400" />
 								<FaStar className="w-3 h-3 text-yellow-400" />
 								<FaStar className="w-3 h-3 text-yellow-400" />
 								<FaStar className="w-3 h-3 text-yellow-400" />
 								<FaStar className="w-3 h-3 text-yellow-400" />
-							</div>
+							</div> */}
 						</Badge>
 
 						<h1 className="max-w-3xl text-4xl md:text-5xl lg:text-6xl font-bold text-center cursor-default mx-auto">
@@ -53,7 +54,7 @@ const InterviewGuruLanding = () => {
 								className="bg-gradient-to-r from-green-600 to-emerald-600 hover:from-green-700 hover:to-emerald-700 text-white"
 								onClick={() => (window.location.href = "https://app.interviewguru.io/sign-up")}
 							>
-								Get Your Personalized Path
+								Get Started for Free
 								<ChevronRight className="w-4 h-4 ml-2" />
 							</Button>
 							<div className="flex items-center gap-2 text-xs text-muted-foreground">
@@ -201,7 +202,7 @@ const InterviewGuruLanding = () => {
 							className="bg-gradient-to-r from-green-600 to-emerald-600 hover:from-green-700 hover:to-emerald-700 text-white"
 							onClick={() => (window.location.href = "https://app.interviewguru.io/sign-up")}
 						>
-							Get Your Personalized Path
+							Get Started for Free
 							<ChevronRight className="w-4 h-4 ml-2" />
 						</Button>
 						<div className="flex items-center gap-2 text-xs text-muted-foreground">
