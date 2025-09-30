@@ -28,18 +28,15 @@ const InterviewGuruLanding = () => {
 				</div>
 				<div className="flex flex-col justify-around py-30">
 					<section className="px-6 flex flex-col gap-5">
-						<Badge variant="outline" className="m-auto flex items-center gap-2 rounded-2xl border-0.5 border p-3 py-2">
-							<p className="text-xs md:text-md m-auto font-light cursor-default">
-								Currently in Beta. Try for FREE Today.
-							</p>
-							{/* <div className="flex gap-0.75">
+						{/* <Badge variant="outline" className="m-auto flex items-center gap-2 rounded-2xl border-0.5 border p-3 py-2">
+							<div className="flex gap-0.75">
 								<FaStar className="w-3 h-3 text-yellow-400" />
 								<FaStar className="w-3 h-3 text-yellow-400" />
 								<FaStar className="w-3 h-3 text-yellow-400" />
 								<FaStar className="w-3 h-3 text-yellow-400" />
 								<FaStar className="w-3 h-3 text-yellow-400" />
-							</div> */}
-						</Badge>
+							</div>
+						</Badge> */}
 
 						<h1 className="max-w-3xl text-4xl md:text-5xl lg:text-6xl font-bold text-center cursor-default mx-auto">
 							Grinding Leetcode won&apos;t get you the FAANG Offer
@@ -332,14 +329,14 @@ const InterviewGuruLanding = () => {
 							</div>
 
 							<div className="text-xl font-bold text-card-foreground mb-1 opacity-70">
-								<s>$24.99</s>
+								<s>$44.99</s>
 								<span className="text-sm font-normal"> / month</span>
 							</div>
-							<div className="text-4xl font-bold text-red-400 mb-1">
-								$12.45
+							<div className="text-4xl font-bold mb-1">
+								$24.99
 								<span className="text-sm font-normal"> / month</span>
 							</div>
-							<div className="flex justify-left text-left text-sm ">
+							{/* <div className="flex justify-left text-left text-sm ">
 								<p className="pt-4">
 									<strong>Early Bird Offer:</strong> Use code{" "}
 									<Badge variant="outline" className="ml-1 outline-red-400 text-white outline-2 rounded-sm text-sm">
@@ -347,7 +344,7 @@ const InterviewGuruLanding = () => {
 									</Badge>{" "}
 									<span className="pl-1">at checkout for 50% OFF</span>
 								</p>
-							</div>
+							</div> */}
 							<Button
 								onClick={() => {
 									window.location.href = "https://app.interviewguru.io/sign-up";
@@ -401,14 +398,10 @@ const InterviewGuruLanding = () => {
 								</div>
 							</div>
 
-							<div className="text-xl font-bold text-card-foreground mb-1 opacity-70">
-								<s>$44.99</s>
-								<span className="text-sm font-normal"> / month</span>
+							<div className="text-4xl font-bold mb-1">
+								$44.99<span className="text-sm font-normal"> / month</span>
 							</div>
-							<div className="text-4xl font-bold text-red-400 mb-1">
-								$22.45<span className="text-sm font-normal"> / month</span>
-							</div>
-							<div className="flex justify-left text-left text-sm">
+							{/* <div className="flex justify-left text-left text-sm">
 								<p className="pt-4">
 									<strong>Early Bird Offer:</strong> Use code{" "}
 									<Badge variant="outline" className="ml-1 outline-red-400 text-white outline-2 rounded-sm text-sm">
@@ -416,7 +409,7 @@ const InterviewGuruLanding = () => {
 									</Badge>{" "}
 									<span className="pl-1">at checkout for 50% OFF</span>
 								</p>
-							</div>
+							</div> */}
 							<Button
 								onClick={() => {
 									window.location.href = "https://app.interviewguru.io/sign-up";
@@ -583,7 +576,7 @@ const InterviewGuruLanding = () => {
 	return (
 		<div className="min-h-screen cursor-default">
 			<HeaderSection />
-			<BetaOffer />
+			{/* <BetaOffer /> */}
 			<HeroSection />
 			<InterviewWithTheseCompaniesSection />
 			<AboutUsSection />

@@ -73,7 +73,7 @@ export const HeaderSection = () => {
 					</Button>
 				</div>
 			</div>
-			<BetaOffer />
+			{/* <BetaOffer /> */}
 		</header>
 	);
 };
